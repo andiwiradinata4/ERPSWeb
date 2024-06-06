@@ -4,7 +4,7 @@ using ERPS.Core.Exceptions;
 using ERPS.Core.Response;
 namespace ERPS.Web.Controllers.API
 {
-    public class BaseController<T> : Controller
+    public class BaseController<T> : Controller where T : class
     {
         private readonly IBaseService<T> _svc;
 

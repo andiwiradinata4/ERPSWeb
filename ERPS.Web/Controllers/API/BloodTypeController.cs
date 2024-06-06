@@ -3,6 +3,7 @@ using ERPS.Core.Models;
 using ERPS.Application.Interfaces;
 using ERPS.Core.Exceptions;
 using ERPS.Core.Response;
+using ERPS.Application.DTOs;
 
 namespace ERPS.Web.Controllers.API
 {
@@ -42,24 +43,5 @@ namespace ERPS.Web.Controllers.API
             }
         }
 
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> Update([FromRoute] int id, [FromBody] BaseMasterCreateOrUpdateDto Requestdto)
-        //{
-        //    try
-        //    {
-        //        if (!ModelState.IsValid) return BadRequest(ModelState);
-        //        BloodType data = Requestdto.FromCreateOrUpdateBloodTypeDto();
-        //        data = await _svc.UpdateAsync(id, data);
-        //        return Ok(new AppResponse(true, "Save Data Success", new { id }));
-        //    }
-        //    catch (AppException ex)
-        //    {
-        //        return BadRequest(new AppResponse(false, ex.Message, null));
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return BadRequest(new AppResponse(false, ex.InnerException, null));
-        //    }
-        //}
     }
 }
