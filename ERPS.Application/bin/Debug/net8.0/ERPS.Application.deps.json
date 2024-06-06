@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ERPS.Application/1.0.0": {
+        "dependencies": {
+          "ERPS.Core": "1.0.0"
+        },
+        "runtime": {
+          "ERPS.Application.dll": {}
+        }
+      },
+      "ERPS.Core/1.0.0": {
+        "runtime": {
+          "ERPS.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ERPS.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ERPS.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
