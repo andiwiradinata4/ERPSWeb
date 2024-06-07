@@ -4,7 +4,7 @@ using ERPS.Core.Exceptions;
 using ERPS.Core.Response;
 namespace ERPS.Web.Controllers.API
 {
-    public class BaseController<T> : Controller where T : class
+    public abstract class BaseController<T> : Controller where T : class
     {
         private readonly IBaseService<T> _svc;
 
@@ -14,7 +14,7 @@ namespace ERPS.Web.Controllers.API
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll([FromQuery] string[] includes)
+        public virtual async Task<IActionResult> GetAll([FromQuery] string[] includes)
         {
             try
             {
@@ -31,7 +31,7 @@ namespace ERPS.Web.Controllers.API
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetByID([FromRoute] int id)
+        public virtual async Task<IActionResult> GetByID([FromRoute] int id)
         {
             try
             {
@@ -47,8 +47,50 @@ namespace ERPS.Web.Controllers.API
             }
         }
 
+        [HttpPost]
+        public virtual async Task<IActionResult> Create([FromBody] T entity)
+        {
+            try
+            {
+                if (!ModelState.IsValid) return BadRequest(ModelState);
+                dynamic data = await _svc.CreateAsync(entity);
+                return Ok(new AppResponse(true,
+                                          "Create Data Success",
+                                          new { data.ID }));
+            }
+            catch (AppException ex)
+            {
+                return BadRequest(new AppResponse(false, ex.Message, null));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new AppResponse(false, ex, null));
+            }
+        }
+
+        [HttpPut("{id}")]
+        public virtual async Task<IActionResult> Update([FromRoute] string id, [FromBody] T entity)
+        {
+            try
+            {
+                if (!ModelState.IsValid) return BadRequest(ModelState);
+                var data = await _svc.UpdateAsync(id, entity);
+                return Ok(new AppResponse(true,
+                                          "Update Data Success",
+                                          new { id }));
+            }
+            catch (AppException ex)
+            {
+                return BadRequest(new AppResponse(false, ex.Message, null));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new AppResponse(false, ex, null));
+            }
+        }
+
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete([FromRoute] int id)
+        public async Task<IActionResult> Delete([FromRoute] string id)
         {
             try
             {

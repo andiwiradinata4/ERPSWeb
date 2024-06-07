@@ -18,14 +18,24 @@ namespace ERPS.Application.UseCases
             return list;
         }
 
-        public async Task<T> GetByIDAsync(int id)
+        public async Task<T> GetByIDAsync(dynamic id)
         {
             return await _repo.GetByIDAsync(id);
         }
 
-        public async Task<T> DeleteAsync(int id)
+        public async Task<T> DeleteAsync(dynamic id)
         {
             return await _repo.DeleteAsync(id);
+        }
+
+        public async Task<T> CreateAsync(T entity)
+        {
+            return await _repo.CreateAsync(entity);
+        }
+
+        public async Task<T> UpdateAsync(dynamic id, T entity)
+        {
+            return await _repo.UpdateAsync(id, entity);
         }
 
     }

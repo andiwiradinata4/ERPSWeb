@@ -17,14 +17,9 @@ namespace ERPS.Application.UseCases
             return await _repo.GetAllAsync(includes);
         }
 
-        public async Task<Status> GetByIDAsync(int id)
+        public async Task<Status> GetByIDAsync(dynamic id)
         {
             return await _repo.GetByIDAsync(id);
-        }
-
-        public async Task<Status> UpdateAsync(int id, Status data)
-        {
-            return await _repo.UpdateAsync(id, data);
         }
 
         public async Task<Status> CreateAsync(Status data)
@@ -33,7 +28,12 @@ namespace ERPS.Application.UseCases
             return await _repo.CreateAsync(data);
         }
 
-        public async Task<Status> DeleteAsync(int id)
+        public async Task<Status> UpdateAsync(dynamic id, Status data)
+        {
+            return await _repo.UpdateAsync(id, data);
+        }
+
+        public async Task<Status> DeleteAsync(dynamic id)
         {
             return await _repo.DeleteAsync(id);
         }

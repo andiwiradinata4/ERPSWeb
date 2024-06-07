@@ -17,20 +17,10 @@ namespace ERPS.Application.UseCases
         {
             return await _repo.GetAllAsync(includes);
         }
-        
-        public async Task<List<BloodType>> GetAllWithIncludes(string[] includes)
-        {
-            return await _repo.GetAllWithIncludes(includes);
-        }
 
-        public async Task<BloodType> GetByIDAsync(int id)
+        public async Task<BloodType> GetByIDAsync(dynamic id)
         {
             return await _repo.GetByIDAsync(id);
-        }
-
-        public async Task<BloodType> DeleteAsync(int id)
-        {
-            return await _repo.DeleteAsync(id);
         }
 
         public async Task<BloodType> CreateAsync(BloodType data)
@@ -39,9 +29,14 @@ namespace ERPS.Application.UseCases
             return await _repo.CreateAsync(data);
         }
 
-        public async Task<BloodType> UpdateAsync(int id, BloodType data)
+        public async Task<BloodType> UpdateAsync(dynamic id, BloodType data)
         {
             return await _repo.UpdateAsync(id, data);
+        }
+
+        public async Task<BloodType> DeleteAsync(dynamic id)
+        {
+            return await _repo.DeleteAsync(id);
         }
 
     }

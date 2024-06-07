@@ -3,7 +3,9 @@
     public interface IBaseService<T>
     {
         Task<List<T>> GetAllAsync(string[] includes);
-        Task<T> GetByIDAsync(int id);
-        Task<T> DeleteAsync(int id);
+        Task<T> GetByIDAsync(dynamic id);
+        Task<T> DeleteAsync(dynamic id);
+        Task<T> CreateAsync(T entity);
+        Task<T> UpdateAsync(dynamic id, T entity);
     }
 }

@@ -17,3 +17,4 @@ D:\My Project\Website\ERPS\ERPS.Infrastructure\obj\Debug\net8.0\ERPS.Inf.79DDA9B
 D:\My Project\Website\ERPS\ERPS.Infrastructure\obj\Debug\net8.0\ERPS.Infrastructure.genruntimeconfig.cache
 D:\My Project\Website\ERPS\ERPS.Infrastructure\bin\Debug\net8.0\ERPS.Application.dll
 D:\My Project\Website\ERPS\ERPS.Infrastructure\bin\Debug\net8.0\ERPS.Application.pdb
+D:\My Project\Website\ERPS\ERPS.Infrastructure\obj\Debug\net8.0\ERPS.Infrastructure.sourcelink.json

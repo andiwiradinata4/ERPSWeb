@@ -18,19 +18,9 @@ namespace ERPS.Application.UseCases
             return await _repo.GetAllAsync(includes);
         }
 
-        public async Task<Nationality> GetByIDAsync(int id)
+        public async Task<Nationality> GetByIDAsync(dynamic id)
         {
             return await _repo.GetByIDAsync(id);
-        }
-
-        public async Task<Nationality> DeleteAsync(int id)
-        {   
-            return await _repo.DeleteAsync(id);
-        }
-
-        public async Task<Nationality> UpdateAsync(int id, Nationality data)
-        {
-            return await _repo.UpdateAsync(id, data);
         }
 
         public async Task<Nationality> CreateAsync(Nationality data)
@@ -38,5 +28,16 @@ namespace ERPS.Application.UseCases
             data.ID = await _repo.GetMaxID();
             return await _repo.CreateAsync(data);
         }
+
+        public async Task<Nationality> UpdateAsync(dynamic id, Nationality data)
+        {
+            return await _repo.UpdateAsync(id, data);
+        }
+
+        public async Task<Nationality> DeleteAsync(dynamic id)
+        {
+            return await _repo.DeleteAsync(id);
+        }
+
     }
 }

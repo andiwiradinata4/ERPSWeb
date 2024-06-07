@@ -18,25 +18,25 @@ namespace ERPS.Application.UseCases
             return await _repo.GetAllAsync(includes);
         }
 
-        public async Task<Gender> GetByIDAsync(int id)
+        public async Task<Gender> GetByIDAsync(dynamic id)
         {
             return await _repo.GetByIDAsync(id);
-        }
-
-        public async Task<Gender> DeleteAsync(int id)
-        {
-            return await _repo.DeleteAsync(id);
-        }
-
-        public async Task<Gender> UpdateAsync(int id, Gender data)
-        {
-            return await _repo.UpdateAsync(id, data);
         }
 
         public async Task<Gender> CreateAsync(Gender data)
         {
             data.ID = await _repo.GetMaxID();
             return await _repo.CreateAsync(data);
+        }
+
+        public async Task<Gender> UpdateAsync(dynamic id, Gender data)
+        {
+            return await _repo.UpdateAsync(id, data);
+        }
+
+        public async Task<Gender> DeleteAsync(dynamic id)
+        {
+            return await _repo.DeleteAsync(id);
         }
 
     }

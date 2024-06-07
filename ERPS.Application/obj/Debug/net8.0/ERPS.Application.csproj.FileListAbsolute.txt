@@ -13,3 +13,4 @@ D:\My Project\Website\ERPS\ERPS.Application\bin\Debug\net8.0\ERPS.Core.dll
 D:\My Project\Website\ERPS\ERPS.Application\bin\Debug\net8.0\ERPS.Core.pdb
 D:\My Project\Website\ERPS\ERPS.Application\obj\Debug\net8.0\ERPS.Application.csproj.AssemblyReference.cache
 D:\My Project\Website\ERPS\ERPS.Application\obj\Debug\net8.0\ERPS.App.A5BFF966.Up2Date
+D:\My Project\Website\ERPS\ERPS.Application\obj\Debug\net8.0\ERPS.Application.sourcelink.json

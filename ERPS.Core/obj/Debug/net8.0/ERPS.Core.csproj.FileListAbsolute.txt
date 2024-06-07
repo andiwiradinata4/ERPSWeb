@@ -9,3 +9,4 @@ D:\My Project\Website\ERPS\ERPS.Core\obj\Debug\net8.0\ERPS.Core.dll
 D:\My Project\Website\ERPS\ERPS.Core\obj\Debug\net8.0\refint\ERPS.Core.dll
 D:\My Project\Website\ERPS\ERPS.Core\obj\Debug\net8.0\ERPS.Core.pdb
 D:\My Project\Website\ERPS\ERPS.Core\obj\Debug\net8.0\ref\ERPS.Core.dll
+D:\My Project\Website\ERPS\ERPS.Core\obj\Debug\net8.0\ERPS.Core.sourcelink.json
