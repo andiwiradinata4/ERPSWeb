@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj": {}
+    "D:\\My Project\\Website\\ERPS\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\ERPS.Application.csproj": {
+    "D:\\My Project\\Website\\ERPS\\ERPS.Application\\ERPS.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\ERPS.Application.csproj",
+        "projectUniqueName": "D:\\My Project\\Website\\ERPS\\ERPS.Application\\ERPS.Application.csproj",
         "projectName": "ERPS.Application",
-        "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\ERPS.Application.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\obj\\",
+        "projectPath": "D:\\My Project\\Website\\ERPS\\ERPS.Application\\ERPS.Application.csproj",
+        "packagesPath": "C:\\Users\\andiw\\.nuget\\packages\\",
+        "outputPath": "D:\\My Project\\Website\\ERPS\\ERPS.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\andiw\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +25,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nuget.org/api/v2/": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj": {
-                "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj"
+              "D:\\My Project\\Website\\ERPS\\ERPS.Core\\ERPS.Core.csproj": {
+                "projectPath": "D:\\My Project\\Website\\ERPS\\ERPS.Core\\ERPS.Core.csproj"
               }
             }
           }
@@ -68,17 +71,20 @@
         }
       }
     },
-    "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj": {
+    "D:\\My Project\\Website\\ERPS\\ERPS.Core\\ERPS.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj",
+        "projectUniqueName": "D:\\My Project\\Website\\ERPS\\ERPS.Core\\ERPS.Core.csproj",
         "projectName": "ERPS.Core",
-        "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\obj\\",
+        "projectPath": "D:\\My Project\\Website\\ERPS\\ERPS.Core\\ERPS.Core.csproj",
+        "packagesPath": "C:\\Users\\andiw\\.nuget\\packages\\",
+        "outputPath": "D:\\My Project\\Website\\ERPS\\ERPS.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\andiw\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,7 +92,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nuget.org/api/v2/": {}
         },
         "frameworks": {
           "net8.0": {
@@ -128,17 +134,20 @@
         }
       }
     },
-    "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj": {
+    "D:\\My Project\\Website\\ERPS\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj",
+        "projectUniqueName": "D:\\My Project\\Website\\ERPS\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj",
         "projectName": "ERPS.Infrastructure",
-        "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\obj\\",
+        "projectPath": "D:\\My Project\\Website\\ERPS\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\andiw\\.nuget\\packages\\",
+        "outputPath": "D:\\My Project\\Website\\ERPS\\ERPS.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\andiw\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -146,17 +155,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nuget.org/api/v2/": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\ERPS.Application.csproj": {
-                "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\ERPS.Application.csproj"
+              "D:\\My Project\\Website\\ERPS\\ERPS.Application\\ERPS.Application.csproj": {
+                "projectPath": "D:\\My Project\\Website\\ERPS\\ERPS.Application\\ERPS.Application.csproj"
               },
-              "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj": {
-                "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj"
+              "D:\\My Project\\Website\\ERPS\\ERPS.Core\\ERPS.Core.csproj": {
+                "projectPath": "D:\\My Project\\Website\\ERPS\\ERPS.Core\\ERPS.Core.csproj"
               }
             }
           }

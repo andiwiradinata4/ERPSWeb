@@ -1,8 +1,8 @@
 @echo off
-cd /d "C:\Project\Web\ERPSWeb"
+cd /d "D:\My Project\Website\ERPS"
 git pull origin
 set /p userInput=Open Project Solution? [y/n]:
 if "%userInput%" EQU "y" (
-start "" "C:\Project\Web\ERPSWeb\ERPS.Web\ERPS.Web.sln"
+start "" "D:\My Project\Website\ERPS\ERPS.Web\ERPS.Web.sln"
 pause
 )
