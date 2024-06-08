@@ -1,4 +1,4 @@
-﻿using ERPS.Core.Models;
+﻿using ERPS.Core.Entities;
 
 namespace ERPS.Application.Interfaces
 {

@@ -10,3 +10,15 @@ D:\My Project\Website\ERPS\ERPS.Core\obj\Debug\net8.0\refint\ERPS.Core.dll
 D:\My Project\Website\ERPS\ERPS.Core\obj\Debug\net8.0\ERPS.Core.pdb
 D:\My Project\Website\ERPS\ERPS.Core\obj\Debug\net8.0\ref\ERPS.Core.dll
 D:\My Project\Website\ERPS\ERPS.Core\obj\Debug\net8.0\ERPS.Core.sourcelink.json
+C:\Project\Web\ERPSWeb\ERPS.Core\bin\Debug\net8.0\ERPS.Core.deps.json
+C:\Project\Web\ERPSWeb\ERPS.Core\bin\Debug\net8.0\ERPS.Core.dll
+C:\Project\Web\ERPSWeb\ERPS.Core\bin\Debug\net8.0\ERPS.Core.pdb
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\ERPS.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\ERPS.Core.AssemblyInfoInputs.cache
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\ERPS.Core.AssemblyInfo.cs
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\ERPS.Core.csproj.CoreCompileInputs.cache
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\ERPS.Core.sourcelink.json
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\ERPS.Core.dll
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\refint\ERPS.Core.dll
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\ERPS.Core.pdb
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\ref\ERPS.Core.dll

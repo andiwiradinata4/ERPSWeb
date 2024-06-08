@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ERPS.Core.Models;
+using ERPS.Core.Entities;
 using ERPS.Application.Interfaces;
 
 namespace ERPS.Web.Controllers.API

@@ -1,6 +1,6 @@
 ﻿using ERPS.Core.Interfaces;
 using ERPS.Infrastructure.Data;
-using ERPS.Core.Models;
+using ERPS.Core.Entities;
 
 namespace ERPS.Infrastructure.Repositories
 {

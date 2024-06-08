@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ERPS.Core.Models
+namespace ERPS.Core.Entities
 {
     [Table("mstDriver")]
     public class Driver : Base

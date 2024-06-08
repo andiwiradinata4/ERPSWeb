@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ERPS.Core.Models
+namespace ERPS.Core.Entities
 {
     [Table("mstReligion")]
     public class Religion : Base

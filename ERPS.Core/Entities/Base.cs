@@ -1,4 +1,4 @@
-﻿namespace ERPS.Core.Models
+﻿namespace ERPS.Core.Entities
 {
     public class Base
     {

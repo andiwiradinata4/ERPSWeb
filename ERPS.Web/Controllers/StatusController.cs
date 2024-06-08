@@ -1,17 +1,29 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ERPS.Application.Interfaces;
+using ERPS.Core.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ERPS.Web.Controllers
 {
     public class StatusController : Controller
     {
-        public IActionResult Index()
+		private readonly IStatusService _svc;
+
+		public StatusController(IStatusService svc)
+		{
+			_svc = svc;
+		}
+
+		public async Task<IActionResult> Index()
         {
-            return View();
+            var data = await _svc.GetAllAsync([]);
+            return View(data);
         }
 
-        public IActionResult Edit(string id)
+        public async Task<IActionResult> Edit(string id)
         {
-            return new ContentResult { Content = id };
+            var data = await _svc.GetByIDAsync(id);
+
+			return View(data);
         }
     }
 }
