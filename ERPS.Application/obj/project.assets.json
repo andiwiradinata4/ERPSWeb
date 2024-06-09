@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Project\\Website\\ERPS\\ERPS.Application\\ERPS.Application.csproj",
+      "projectUniqueName": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\ERPS.Application.csproj",
       "projectName": "ERPS.Application",
-      "projectPath": "D:\\My Project\\Website\\ERPS\\ERPS.Application\\ERPS.Application.csproj",
+      "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\ERPS.Application.csproj",
       "packagesPath": "C:\\Users\\andiw\\.nuget\\packages\\",
-      "outputPath": "D:\\My Project\\Website\\ERPS\\ERPS.Application\\obj\\",
+      "outputPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -57,8 +57,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\My Project\\Website\\ERPS\\ERPS.Core\\ERPS.Core.csproj": {
-              "projectPath": "D:\\My Project\\Website\\ERPS\\ERPS.Core\\ERPS.Core.csproj"
+            "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj": {
+              "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj"
             }
           }
         }

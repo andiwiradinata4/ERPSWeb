@@ -1,53 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\",
+  "WorkspaceRootPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\erps.web\\views\\status\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\views\\status\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:views\\status\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\erps.web\\views\\status\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\views\\status\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:views\\status\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\erps.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\erps.web\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\erps.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\erps.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\erps.web\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\erps.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\erps.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\erps.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\erps.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41866BC3-9B44-491B-A4F6-857CD61B9253}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\erps.infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\ERPS.Infrastructure\\Repositories\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,9 +63,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "StatusController.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Controllers\\StatusController.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\StatusController.cs",
               "RelativeDocumentMoniker": "Controllers\\StatusController.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Controllers\\StatusController.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\StatusController.cs",
               "RelativeToolTip": "Controllers\\StatusController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -75,11 +75,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Views\\Status\\Index.cshtml",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Views\\Status\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Status\\Index.cshtml",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Views\\Status\\Index.cshtml",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Views\\Status\\Index.cshtml",
               "RelativeToolTip": "Views\\Status\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAowCAAAAAKAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowB0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-07T14:15:36.012Z",
               "EditorCaption": ""
@@ -88,9 +88,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ReadMe.txt",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\ReadMe.txt",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ReadMe.txt",
               "RelativeDocumentMoniker": "ReadMe.txt",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\ReadMe.txt",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ReadMe.txt",
               "RelativeToolTip": "ReadMe.txt",
               "ViewState": "AQIAAAQAAAAAAAAAAAAQwCYAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -100,9 +100,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Views\\Status\\Edit.cshtml",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Views\\Status\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Status\\Edit.cshtml",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Views\\Status\\Edit.cshtml",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Views\\Status\\Edit.cshtml",
               "RelativeToolTip": "Views\\Status\\Edit.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -112,9 +112,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAABkAAAAAAAAAAAAuwCUAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -124,9 +124,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Views\\_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "Views\\_ViewStart.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -136,9 +136,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -148,9 +148,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Program.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Program.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAAAAFMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -160,9 +160,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -173,9 +173,9 @@
               "DocumentIndex": 11,
               "Title": "BaseRepository.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\ERPS.Infrastructure\\Repositories\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\ERPS.Infrastructure\\Repositories\\BaseRepository.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\ERPS.Infrastructure\\Repositories\\BaseRepository.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "..\\..\\ERPS.Infrastructure\\Repositories\\BaseRepository.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAIwBAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T15:08:37.836Z"
@@ -184,9 +184,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Properties\\launchSettings.json",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -196,9 +196,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\ERPS.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

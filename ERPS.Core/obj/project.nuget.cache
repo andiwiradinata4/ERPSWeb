@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rAtjQInjK7/pWSLGUdpFaBAVPBjBFTIACcw39HosUROkg6Z7Mg1yAlJsaF7Fr0/Xr/OiSsP5YmwHOSEELPX4gA==",
+  "dgSpecHash": "qK4M5NZ9zkrSvWq+87ekiY5tOupZwzuvnTeIK51foMNnVyeBNiTmcVzeEq9pn+CCBB2x8GQsDNUK6cw+wAKQ5A==",
   "success": true,
-  "projectFilePath": "D:\\My Project\\Website\\ERPS\\ERPS.Core\\ERPS.Core.csproj",
+  "projectFilePath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

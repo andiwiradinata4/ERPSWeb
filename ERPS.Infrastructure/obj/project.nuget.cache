@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QG4ImLiL52pyo+CHDMrvttJOPIjtvex9qmLtYx7w4+B6DUify6C59uw2OretUOJ17IDCvcEK2DvzPWymiw/rrQ==",
+  "dgSpecHash": "wZqQRWBfA4RiThEezxpqUSWlqC1taSp367nyl78BDrwgtkA6MuiEfnwMnWjm1Wn8D518nwUlVJGh3Kx/fq6cSQ==",
   "success": true,
-  "projectFilePath": "D:\\My Project\\Website\\ERPS\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj",
+  "projectFilePath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andiw\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\andiw\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

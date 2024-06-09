@@ -22,3 +22,15 @@ C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\ERPS.Core.dll
 C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\refint\ERPS.Core.dll
 C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\ERPS.Core.pdb
 C:\Project\Web\ERPSWeb\ERPS.Core\obj\Debug\net8.0\ref\ERPS.Core.dll
+D:\My Project\Website\ERPS\BE\ERPS.Core\bin\Debug\net8.0\ERPS.Core.deps.json
+D:\My Project\Website\ERPS\BE\ERPS.Core\bin\Debug\net8.0\ERPS.Core.dll
+D:\My Project\Website\ERPS\BE\ERPS.Core\bin\Debug\net8.0\ERPS.Core.pdb
+D:\My Project\Website\ERPS\BE\ERPS.Core\obj\Debug\net8.0\ERPS.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Project\Website\ERPS\BE\ERPS.Core\obj\Debug\net8.0\ERPS.Core.AssemblyInfoInputs.cache
+D:\My Project\Website\ERPS\BE\ERPS.Core\obj\Debug\net8.0\ERPS.Core.AssemblyInfo.cs
+D:\My Project\Website\ERPS\BE\ERPS.Core\obj\Debug\net8.0\ERPS.Core.csproj.CoreCompileInputs.cache
+D:\My Project\Website\ERPS\BE\ERPS.Core\obj\Debug\net8.0\ERPS.Core.sourcelink.json
+D:\My Project\Website\ERPS\BE\ERPS.Core\obj\Debug\net8.0\ERPS.Core.dll
+D:\My Project\Website\ERPS\BE\ERPS.Core\obj\Debug\net8.0\refint\ERPS.Core.dll
+D:\My Project\Website\ERPS\BE\ERPS.Core\obj\Debug\net8.0\ERPS.Core.pdb
+D:\My Project\Website\ERPS\BE\ERPS.Core\obj\Debug\net8.0\ref\ERPS.Core.dll
