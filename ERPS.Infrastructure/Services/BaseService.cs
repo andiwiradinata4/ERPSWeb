@@ -1,6 +1,6 @@
-﻿using ERPS.Infrastructure.Repositories;
-using ERPS.Application.Interfaces;
-using ERPS.Core.Interfaces;
+﻿using ERPS.Application.Interfaces.v1;
+using ERPS.Core.Interfaces.v1;
+using ERPS.Infrastructure.Repositories.v1;
 
 namespace ERPS.Application.UseCases
 {

@@ -1,6 +1,6 @@
 ﻿using ERPS.Core.Entities;
-using ERPS.Core.Interfaces;
-using ERPS.Application.Interfaces;
+using ERPS.Application.Interfaces.v1;
+using ERPS.Core.Interfaces.v1;
 
 namespace ERPS.Application.UseCases
 {

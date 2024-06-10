@@ -1,8 +1,8 @@
-using ERPS.Application.Interfaces;
+using ERPS.Application.Interfaces.v1;
 using ERPS.Application.UseCases;
-using ERPS.Core.Interfaces;
-using ERPS.Infrastructure.Data;
-using ERPS.Infrastructure.Repositories;
+using ERPS.Core.Interfaces.v1;
+using ERPS.Infrastructure.Data.v1;
+using ERPS.Infrastructure.Repositories.v1;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
