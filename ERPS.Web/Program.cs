@@ -1,9 +1,14 @@
 using ERPS.Application.Interfaces.v1;
 using ERPS.Application.UseCases;
+using ERPS.Core.Entities;
 using ERPS.Core.Interfaces.v1;
 using ERPS.Infrastructure.Data.v1;
 using ERPS.Infrastructure.Repositories.v1;
+using ERPS.Infrastructure.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,13 +18,39 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddEndpointsApiExplorer();
 
 // Add Swagger services
-builder.Services.AddSwaggerGen(c =>
+builder.Services.AddSwaggerGen(option =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo
+    option.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "My API",
+        Title = "API",
         Description = "ASP.NET Core Web API"
+    });
+
+    option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Description = "Please enter a valid token",
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        BearerFormat = "JWT",
+        Scheme = "Bearer"
+    });
+
+    option.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer",
+
+                },
+            },
+            new string[]{ }
+        }
     });
 
     // Add XML comments if available
@@ -27,7 +58,7 @@ builder.Services.AddSwaggerGen(c =>
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     if (File.Exists(xmlPath))
     {
-        c.IncludeXmlComments(xmlPath);
+        option.IncludeXmlComments(xmlPath);
     }
 });
 
@@ -57,6 +88,42 @@ builder.Services.AddScoped<IGenderService, GenderService>();
 builder.Services.AddScoped<IMaritalStatusService, MaritalStatusService>();
 builder.Services.AddScoped<IStatusService, StatusService>();
 
+// JWT Token
+builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
+{
+    options.Password.RequireDigit = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireUppercase = true;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequiredLength = 12;
+}).AddEntityFrameworkStores<AppDBContext>().AddDefaultTokenProviders();
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme =
+    options.DefaultChallengeScheme =
+    options.DefaultForbidScheme =
+    options.DefaultScheme =
+    options.DefaultSignInScheme =
+    options.DefaultSignOutScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.ClaimsIssuer = builder.Configuration["JWT:Issuer"];
+    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidIssuer = builder.Configuration["JWT:Issuer"],
+        ValidateAudience = true,
+        ValidAudience = builder.Configuration["JWT:Audience"],
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(builder.Configuration["JWT:SigningKey"] ?? "")),
+        ValidateLifetime = true,
+        ClockSkew = new TimeSpan(0, 1, 5),
+    };
+});//.AddScheme<ApiKeyAuthenticationOptions, ApiKeyAuthenticationHandler>(ApiKeyAuthenticationOptions.DefaultScheme, options => { });
+builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+builder.Services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -82,7 +149,10 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
 app.MapControllerRoute(
     name: "default",

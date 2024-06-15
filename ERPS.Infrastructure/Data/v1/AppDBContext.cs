@@ -1,14 +1,16 @@
 ﻿using ERPS.Core.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 namespace ERPS.Infrastructure.Data.v1
 {
-    public class AppDBContext : DbContext
+    public class AppDBContext : IdentityDbContext<AppUser>
     {
         public AppDBContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
 
         }
-
+        public DbSet<Token> Tokens { get; set; }
         public DbSet<Status> Status { get; set; }
         public DbSet<Gender> Genders { get; set; }
         public DbSet<BloodType> BloodTypes { get; set; }
@@ -57,6 +59,24 @@ namespace ERPS.Infrastructure.Data.v1
             //modelBuilder.Entity<Nationality>().ToTable("QMS_mstNationality");
             //modelBuilder.Entity<Religion>().ToTable("QMS_mstReligion");
             //modelBuilder.Entity<Driver>().ToTable("QMS_mstDriver");
+
+            // Register Role for Using JWT
+            List<IdentityRole> roles = new()
+            {
+                new IdentityRole
+                {
+                    Name = "Admin",
+                    NormalizedName = "ADMIN"
+                },
+                new IdentityRole
+                {
+                    Name = "User",
+                    NormalizedName = "USER"
+                }
+            };
+            modelBuilder.Entity<IdentityRole>().HasData(roles);
+
+            modelBuilder.Entity<Token>().Property(e => e.ID).ValueGeneratedOnAdd();
 
             base.OnModelCreating(modelBuilder);
         }

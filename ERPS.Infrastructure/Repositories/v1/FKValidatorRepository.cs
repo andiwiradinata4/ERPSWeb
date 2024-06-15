@@ -21,7 +21,7 @@ namespace ERPS.Infrastructure.Repositories.v1
 
         public dynamic GetDbSetByName(string typeName)
         {
-            var type = Type.GetType($"ERPS.Core.Models.{typeName}, ERPS.Core");
+            var type = Type.GetType($"ERPS.Core.Entities.{typeName}, ERPS.Core");
             if (type == null) throw new AppException($"Type {typeName} not found.");
 
             var dbSetProperty = _context.GetType().GetProperties()

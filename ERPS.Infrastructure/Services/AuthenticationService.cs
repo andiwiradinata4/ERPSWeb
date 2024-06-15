@@ -1,0 +1,258 @@
+﻿using ERPS.Application.DTOs.v1.Authentication;
+using ERPS.Application.Interfaces.v1;
+using ERPS.Core.Entities;
+using ERPS.Core.Exceptions.v1;
+using ERPS.Core.Interfaces.v1;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Security.Cryptography;
+using System.Text;
+namespace ERPS.Infrastructure.Services
+{
+    public class AuthenticationService : IAuthenticationService
+    {
+        private readonly UserManager<AppUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
+        private readonly IConfiguration _configuration;
+        private readonly SymmetricSecurityKey _key;
+        private readonly IAuthenticationRepository _repo;
+        public AuthenticationService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IConfiguration configuration, IAuthenticationRepository repo)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;
+            _configuration = configuration;
+            _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:SigningKey"] ?? ""));
+            _repo = repo;
+        }
+
+        public async Task<TokenDTO> Register(RegisterDTO dto)
+        {
+            string errorMessage = "";
+
+            var user = new AppUser
+            {
+                UserName = dto.Username,
+                Email = dto.Email,
+                PhoneNumber = dto.PhoneNumber,
+                FirstName = dto.FirstName,
+                LastName = dto.LastName,
+                BirthDate = dto.BirthDate
+            };
+            var createUser = await _userManager.CreateAsync(user, dto.Password ?? "");
+            if (createUser.Succeeded)
+            {
+                var roleResult = await _userManager.AddToRoleAsync(user, "User");
+                if (roleResult.Succeeded)
+                {
+                    var JWTToken = CreateJWTToken(user);
+                    return JWTToken;
+                }
+                else
+                {
+                    foreach (var error in roleResult.Errors)
+                    {
+                        errorMessage += error.Description + " | ";
+                    }
+                    if (errorMessage.Length > 0) errorMessage = errorMessage.Substring(0, errorMessage.Length - 3);
+                    throw new AppException(errorMessage);
+                }
+            }
+            else
+            {
+                foreach (var error in createUser.Errors)
+                {
+                    errorMessage += error.Description + " | ";
+                }
+                if (errorMessage.Length > 0) errorMessage = errorMessage.Substring(0, errorMessage.Length - 3);
+                throw new AppException(errorMessage);
+            }
+        }
+
+        public async Task<TokenDTO> Login(LoginDTO dto)
+        {
+            var user = await _userManager.Users.FirstOrDefaultAsync(x => x.UserName == dto.UserName.ToLower());
+            if (user == null) throw new AppException("Invalid Username.");
+
+            var result = await _signInManager.CheckPasswordSignInAsync(user, dto.Password, false);
+            if (!result.Succeeded) throw new AppException("Password incorrect.");
+
+            var token = CreateJWTToken(user);
+
+            var resultSetAuthentication = await _userManager.SetAuthenticationTokenAsync(user, token.Issuer, token.UserName, token.AccessToken);
+            if (resultSetAuthentication.Succeeded)
+            {
+                return token;
+            }
+            else
+            {
+                throw new AppException(resultSetAuthentication.Errors.First().Description);
+            }
+        }
+
+        public async Task<TokenDTO> RefreshToken(string refreshToken)
+        {
+            var token = _repo.GetToken(refreshToken);
+            if (token == null) throw new AppException("Invalid Refresh Token.");
+
+            var user = await _userManager.FindByIdAsync(token.UserID);
+            if (user == null) throw new AppException("User is not valid.");
+
+            var newToken = CreateJWTToken(user);
+            var resultSetAuthentication = await _userManager.SetAuthenticationTokenAsync(user, newToken.Issuer, newToken.UserName, newToken.AccessToken);
+            if (resultSetAuthentication.Succeeded)
+            {
+                return newToken;
+            }
+            else
+            {
+                throw new AppException(resultSetAuthentication.Errors.First().Description);
+            }
+        }
+
+        public async Task<AppUser> GetDetailUser(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null) throw new AppException("User not found.");
+            return user;
+        }
+
+        public async Task<VerifyConfirmEmailDTO> EmailConfirmationToken(string userId)
+        {
+            var tokenType = "EMAIL_CONFIRMATION";
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null) throw new AppException("User not found.");
+            var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            var code = GenerateCode(user, tokenType, token);
+            return new VerifyConfirmEmailDTO { Code = code, Token = token };
+        }
+
+        public async Task<bool> VerifyEmailConfirmationToken(string userId, VerifyConfirmEmailDTO dto)
+        {
+            var tokenType = "EMAIL_CONFIRMATION";
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null) throw new AppException("User not found.");
+            var token = GetTokenAsync(dto.Token);
+            if (token == null || token.TokenType != tokenType) throw new AppException("Token is not valid.");
+            if (token.Code != dto.Code) throw new AppException("Code is not valid.");
+            var result = await _userManager.ConfirmEmailAsync(user, token.TokenValue);
+            if (result.Succeeded)
+            {
+                GenerateCode(user, tokenType, "SUCCESS");
+                return true;
+            }
+            else
+            {
+                throw new AppException(result.Errors.First().Description);
+            }
+        }
+
+        public async Task<VerifyConfirmEmailDTO> ChangeEmailToken(string userId, string newEmail)
+        {
+            var tokenType = "CHANGE_EMAIL";
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null) throw new AppException("User not found.");
+
+            var token = await _userManager.GenerateChangeEmailTokenAsync(user, newEmail);
+            var code = GenerateCode(user, tokenType, token);
+            return new VerifyConfirmEmailDTO { Code = code, Token = token };
+        }
+
+        public Task<bool> ChangeEmail(string userId, ChangeEmailDTO dto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public TokenDTO CreateJWTToken(AppUser user)
+        {
+            var claims = new List<Claim> {
+                new Claim(JwtRegisteredClaimNames.Sub, user.Id ?? ""),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                //new Claim(JwtRegisteredClaimNames.Email, user.Email ?? ""),
+                //new Claim(JwtRegisteredClaimNames.GivenName, user.UserName ?? "")
+            };
+
+            var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(claims),
+                Expires = DateTime.Now.AddMinutes(15),
+                SigningCredentials = creds,
+                Issuer = _configuration["JWT:Issuer"],
+                Audience = _configuration["JWT:Audience"]
+            };
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var resultToken = tokenHandler.WriteToken(token);
+            var refreshToken = GenerateRefreshToken();
+
+            TokenDTO usToken = new()
+            {
+                UserName = user.UserName ?? "",
+                Email = user.Email ?? "",
+                AccessToken = resultToken,
+                ValidFrom = token.ValidFrom,
+                ValidTo = token.ValidTo,
+                RefreshToken = refreshToken,
+                Issuer = _configuration["JWT:Issuer"] ?? "",
+                Audience = _configuration["JWT:Audience"] ?? ""
+            };
+
+            if (user.Id == null) throw new Exception("User ID not Valid!");
+
+            bool bolRefresToken = _repo.SaveToken(new Token()
+            {
+                UserID = user.Id,
+                TokenType = "REFRESH_TOKEN",
+                TokenValue = refreshToken,
+                ValidFrom = DateTime.Today,
+                ValidTo = DateTime.Today.AddYears(100),
+            });
+
+            if (!bolRefresToken) throw new Exception("Error when generate fefresh token!");
+
+            return usToken;
+        }
+
+        private static string GenerateRefreshToken()
+        {
+            var randomNumber = new byte[64];
+            using var rng = RandomNumberGenerator.Create();
+            rng.GetBytes(randomNumber);
+            return Convert.ToBase64String(randomNumber);
+        }
+
+        public Token? GetTokenAsync(string token)
+        {
+            return _repo.GetToken(token);
+        }
+
+        public string GenerateCode(AppUser user, string tokenType, string token)
+        {
+            string code = "";
+            Random rdm = new Random();
+            for (int i = 0; i < 6; i++)
+            {
+                code += rdm.Next(0, 9).ToString();
+            }
+
+            bool bolSuccess = _repo.SaveToken(new Token()
+            {
+                UserID = user.Id,
+                TokenType = tokenType,
+                TokenValue = token,
+                Code = code,
+                ValidFrom = DateTime.Today,
+                ValidTo = DateTime.Today.AddYears(100),
+            });
+
+            if (!bolSuccess) throw new Exception("Error Save Token.");
+            return code;
+        }
+
+    }
+}
