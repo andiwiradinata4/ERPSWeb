@@ -5,7 +5,18 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>D:\My Project\Website\ERPS\BE\Publisher</_PublishTargetUrl>
-    <History>True|2024-06-17T02:54:23.6995854Z;True|2024-06-17T09:53:48.6670692+07:00;True|2024-06-17T09:46:54.1768219+07:00;True|2024-06-08T17:37:37.6566347+07:00;</History>
+    <History>True|2024-06-17T03:49:32.0000091Z;True|2024-06-17T09:54:23.6995854+07:00;True|2024-06-17T09:53:48.6670692+07:00;True|2024-06-17T09:46:54.1768219+07:00;True|2024-06-08T17:37:37.6566347+07:00;</History>
     <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
   </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=localhost%3bInitial Catalog=ERPSWeb%3bIntegrated Security=True%3bConnect Timeout=30%3bEncrypt=False%3bApplicationIntent=ReadWrite%3bMultiSubnetFailOver=False%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="ERPS.Infrastructure.Data.v1.AppDBContext">
+      <Value>Data Source=localhost%3bInitial Catalog=ERPSWeb%3bIntegrated Security=True%3bConnect Timeout=30%3bEncrypt=False%3bApplicationIntent=ReadWrite%3bMultiSubnetFailOver=False%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
 </Project>
