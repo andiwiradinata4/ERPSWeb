@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ERPS.Application
-build_property.ProjectDir = D:\My Project\Website\ERPS\BE\ERPS.Application\
+build_property.ProjectDir = D:\My Project\Website\New ERPS\ERPS.Application\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

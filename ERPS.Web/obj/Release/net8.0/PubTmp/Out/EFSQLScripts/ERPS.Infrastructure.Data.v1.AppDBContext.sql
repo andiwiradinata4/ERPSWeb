@@ -13,7 +13,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[AspNetRoles] (
@@ -28,7 +28,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[AspNetUsers] (
@@ -57,7 +57,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[mstStatus] (
@@ -77,7 +77,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[mstToken] (
@@ -95,7 +95,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[AspNetRoleClaims] (
@@ -111,7 +111,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[AspNetUserClaims] (
@@ -127,7 +127,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[AspNetUserLogins] (
@@ -143,7 +143,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[AspNetUserRoles] (
@@ -158,7 +158,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[AspNetUserTokens] (
@@ -174,7 +174,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[mstBloodType] (
@@ -195,7 +195,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[mstGender] (
@@ -216,7 +216,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[mstMaritalStatus] (
@@ -237,7 +237,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[mstNationality] (
@@ -258,7 +258,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[mstReligion] (
@@ -279,7 +279,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE TABLE [dbo].[mstDriver] (
@@ -328,14 +328,14 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[dbo].[AspNetRoles]'))
         SET IDENTITY_INSERT [dbo].[AspNetRoles] ON;
     EXEC(N'INSERT INTO [dbo].[AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
-    VALUES (N''30231824-290b-49bb-9c52-1d7b49d05775'', NULL, N''Admin'', N''ADMIN''),
-    (N''654a3529-24c2-45ea-be22-53ccf8a043fc'', NULL, N''User'', N''USER'')');
+    VALUES (N''d23b8f4f-2afc-4ba1-848d-d0dc9e94f3a6'', NULL, N''Admin'', N''ADMIN''),
+    (N''f09e8844-6e7c-4965-9175-e58c4c836280'', NULL, N''User'', N''USER'')');
     IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[dbo].[AspNetRoles]'))
         SET IDENTITY_INSERT [dbo].[AspNetRoles] OFF;
 END;
@@ -343,7 +343,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [dbo].[AspNetRoleClaims] ([RoleId]);
@@ -352,7 +352,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     EXEC(N'CREATE UNIQUE INDEX [RoleNameIndex] ON [dbo].[AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL');
@@ -361,7 +361,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_AspNetUserClaims_UserId] ON [dbo].[AspNetUserClaims] ([UserId]);
@@ -370,7 +370,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_AspNetUserLogins_UserId] ON [dbo].[AspNetUserLogins] ([UserId]);
@@ -379,7 +379,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [dbo].[AspNetUserRoles] ([RoleId]);
@@ -388,7 +388,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [EmailIndex] ON [dbo].[AspNetUsers] ([NormalizedEmail]);
@@ -397,7 +397,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     EXEC(N'CREATE UNIQUE INDEX [UserNameIndex] ON [dbo].[AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL');
@@ -406,7 +406,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_mstBloodType_StatusID] ON [dbo].[mstBloodType] ([StatusID]);
@@ -415,7 +415,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_mstDriver_BloodTypeID] ON [dbo].[mstDriver] ([BloodTypeID]);
@@ -424,7 +424,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_mstDriver_GenderID] ON [dbo].[mstDriver] ([GenderID]);
@@ -433,7 +433,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_mstDriver_MaritalStatusID] ON [dbo].[mstDriver] ([MaritalStatusID]);
@@ -442,7 +442,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_mstDriver_NationalityID] ON [dbo].[mstDriver] ([NationalityID]);
@@ -451,7 +451,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_mstDriver_ReligionID] ON [dbo].[mstDriver] ([ReligionID]);
@@ -460,7 +460,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_mstDriver_StatusID] ON [dbo].[mstDriver] ([StatusID]);
@@ -469,7 +469,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_mstGender_StatusID] ON [dbo].[mstGender] ([StatusID]);
@@ -478,7 +478,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_mstMaritalStatus_StatusID] ON [dbo].[mstMaritalStatus] ([StatusID]);
@@ -487,7 +487,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_mstNationality_StatusID] ON [dbo].[mstNationality] ([StatusID]);
@@ -496,7 +496,7 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     CREATE INDEX [IX_mstReligion_StatusID] ON [dbo].[mstReligion] ([StatusID]);
@@ -505,11 +505,11 @@ GO
 
 IF NOT EXISTS (
     SELECT * FROM [__EFMigrationsHistory]
-    WHERE [MigrationId] = N'20240615150040_FirstInit'
+    WHERE [MigrationId] = N'20240617092409_InitialCreate'
 )
 BEGIN
     INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
-    VALUES (N'20240615150040_FirstInit', N'8.0.6');
+    VALUES (N'20240617092409_InitialCreate', N'8.0.6');
 END;
 GO
 

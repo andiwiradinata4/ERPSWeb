@@ -527,13 +527,13 @@ namespace ERPS.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "30231824-290b-49bb-9c52-1d7b49d05775",
+                            Id = "d23b8f4f-2afc-4ba1-848d-d0dc9e94f3a6",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "654a3529-24c2-45ea-be22-53ccf8a043fc",
+                            Id = "f09e8844-6e7c-4965-9175-e58c4c836280",
                             Name = "User",
                             NormalizedName = "USER"
                         });

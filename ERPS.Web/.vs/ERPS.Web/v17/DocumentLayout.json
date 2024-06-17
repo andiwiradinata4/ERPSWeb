@@ -1,25 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\",
+  "WorkspaceRootPath": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\erps.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:erps.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\new erps\\erps.infrastructure\\data\\v1\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096C0413-6957-410B-B96A-51A29F15EF92}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\erps.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|d:\\my project\\website\\new erps\\erps.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|d:\\my project\\website\\new erps\\erps.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|d:\\my project\\website\\new erps\\erps.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|d:\\my project\\website\\new erps\\erps.web\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\new erps\\erps.infrastructure\\services\\v1\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|d:\\my project\\website\\new erps\\erps.web\\controllers\\v1\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:controllers\\v1\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,72 +35,102 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 238,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 206,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ERPS.Core",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\ERPS.Core.csproj",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj",
-              "RelativeToolTip": "..\\ERPS.Core\\ERPS.Core.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-17T05:14:13.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ERPS.Web",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ERPS.Web.csproj",
-              "RelativeDocumentMoniker": "ERPS.Web.csproj",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ERPS.Web.csproj",
-              "RelativeToolTip": "ERPS.Web.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-17T05:09:28.063Z",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-17T10:06:47.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAFAAAA",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-17T04:54:34.8Z",
+              "WhenOpened": "2024-06-17T10:06:40.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ReadMe.txt",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ReadMe.txt",
+              "DocumentMoniker": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\ReadMe.txt",
               "RelativeDocumentMoniker": "ReadMe.txt",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ReadMe.txt",
+              "ToolTip": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\ReadMe.txt",
               "RelativeToolTip": "ReadMe.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAxAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-06-17T02:39:59.661Z",
+              "WhenOpened": "2024-06-17T09:21:29.38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-17T02:31:47.528Z",
+              "DocumentIndex": 0,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\New ERPS\\ERPS.Infrastructure\\Data\\v1\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Data\\v1\\AppDBContext.cs",
+              "ToolTip": "D:\\My Project\\Website\\New ERPS\\ERPS.Infrastructure\\Data\\v1\\AppDBContext.cs",
+              "RelativeToolTip": "..\\ERPS.Infrastructure\\Data\\v1\\AppDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T09:21:21.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\Controllers\\v1\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v1\\AuthenticationController.cs",
+              "ToolTip": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\Controllers\\v1\\AuthenticationController.cs",
+              "RelativeToolTip": "Controllers\\v1\\AuthenticationController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T09:14:07.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\New ERPS\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
+              "ToolTip": "D:\\My Project\\Website\\New ERPS\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
+              "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T09:13:42.113Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 232,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAtwDAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T09:11:29.496Z",
               "EditorCaption": ""
             }
           ]

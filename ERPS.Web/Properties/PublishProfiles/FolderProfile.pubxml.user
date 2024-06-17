@@ -4,14 +4,14 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>D:\My Project\Website\ERPS\BE\Publisher</_PublishTargetUrl>
-    <History>True|2024-06-17T05:17:45.4478443Z;True|2024-06-17T11:56:01.3322779+07:00;True|2024-06-17T11:55:28.7472107+07:00;True|2024-06-17T10:49:32.0000091+07:00;True|2024-06-17T09:54:23.6995854+07:00;True|2024-06-17T09:53:48.6670692+07:00;True|2024-06-17T09:46:54.1768219+07:00;True|2024-06-08T17:37:37.6566347+07:00;</History>
+    <_PublishTargetUrl>D:\My Project\Website\New ERPS\ERPS.Web\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-06-17T10:02:02.9820579Z;True|2024-06-17T17:01:43.5460425+07:00;True|2024-06-17T16:55:31.9435949+07:00;True|2024-06-17T16:54:41.4214660+07:00;True|2024-06-17T16:32:31.0131587+07:00;True|2024-06-17T14:49:54.1249276+07:00;True|2024-06-17T14:29:49.4450664+07:00;True|2024-06-17T13:14:31.7321538+07:00;</History>
     <LastFailureDetails />
     <TimeStampOfAssociatedLegacyPublishXmlFile />
   </PropertyGroup>
   <ItemGroup>
     <DestinationConnectionStrings Include="DefaultConnection">
-      <Value>Data Source=localhost%3bInitial Catalog=ERPSWeb%3bIntegrated Security=True%3bConnect Timeout=30%3bEncrypt=False%3bApplicationIntent=ReadWrite%3bMultiSubnetFailOver=False%3b</Value>
+      <Value>Data Source=localhost%3bInitial Catalog=ERPSWeb1%3bIntegrated Security=True%3bConnect Timeout=30%3bEncrypt=False%3bApplicationIntent=ReadWrite%3bMultiSubnetFailOver=False%3b</Value>
     </DestinationConnectionStrings>
   </ItemGroup>
   <ItemGroup>
