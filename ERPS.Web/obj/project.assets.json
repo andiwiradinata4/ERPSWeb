@@ -2120,10 +2120,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "ERPS.Core": "1.0.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.6",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.6",
-          "Microsoft.Extensions.Identity.Core": "8.0.6"
+          "ERPS.Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ERPS.Application.dll": {}
@@ -2136,9 +2133,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.6",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.6",
-          "Microsoft.Extensions.Identity.Core": "8.0.6"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.6"
         },
         "compile": {
           "bin/placeholder/ERPS.Core.dll": {}
@@ -2153,11 +2148,9 @@
         "dependencies": {
           "ERPS.Application": "1.0.0",
           "ERPS.Core": "1.0.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.6",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.6",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.6",
-          "Microsoft.Extensions.Identity.Core": "8.0.6"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.6"
         },
         "compile": {
           "bin/placeholder/ERPS.Infrastructure.dll": {}
@@ -5507,7 +5500,6 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.6",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.6",
-      "Microsoft.Extensions.Identity.Core >= 8.0.6",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -5594,10 +5586,6 @@
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
-            "target": "Package",
-            "version": "[8.0.6, )"
-          },
-          "Microsoft.Extensions.Identity.Core": {
             "target": "Package",
             "version": "[8.0.6, )"
           },

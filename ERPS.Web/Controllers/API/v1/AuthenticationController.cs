@@ -1,10 +1,8 @@
 ﻿using ERPS.Application.DTOs.v1.Authentication;
 using ERPS.Application.Interfaces.v1;
-using ERPS.Core.Entities;
 using ERPS.Core.Exceptions.v1;
 using ERPS.Core.Response.v1;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NetCore.Models.dto.Account;
 using System.Security.Claims;
@@ -15,12 +13,10 @@ namespace ERPS.Web.Controllers.API.v1
     [ApiController]
     public class AuthenticationController: ControllerBase
     {
-        private readonly UserManager<AppUser> _userManager;
         private readonly IAuthenticationService _svc;
 
-        public AuthenticationController(UserManager<AppUser> userManager, IAuthenticationService svc)
+        public AuthenticationController(IAuthenticationService svc)
         {
-            _userManager = userManager;
             _svc = svc;
         }
 
