@@ -3,6 +3,13 @@
   "WorkspaceRootPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\erps.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:erps.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096C0413-6957-410B-B96A-51A29F15EF92}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\erps.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{57C4AC44-9D26-4C66-9056-54CFFC81C796}|ERPS.Web.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -22,24 +29,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 238,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ERPS.Core",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj",
+              "RelativeDocumentMoniker": "..\\ERPS.Core\\ERPS.Core.csproj",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj",
+              "RelativeToolTip": "..\\ERPS.Core\\ERPS.Core.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-17T05:14:13.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ERPS.Web",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ERPS.Web.csproj",
+              "RelativeDocumentMoniker": "ERPS.Web.csproj",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ERPS.Web.csproj",
+              "RelativeToolTip": "ERPS.Web.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-17T05:09:28.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-06-17T04:54:34.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ReadMe.txt",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ReadMe.txt",
               "RelativeDocumentMoniker": "ReadMe.txt",
@@ -47,11 +80,12 @@
               "RelativeToolTip": "ReadMe.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-06-17T02:39:59.661Z"
+              "WhenOpened": "2024-06-17T02:39:59.661Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",

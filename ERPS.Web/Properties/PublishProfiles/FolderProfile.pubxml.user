@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>D:\My Project\Website\ERPS\BE\Publisher</_PublishTargetUrl>
-    <History>True|2024-06-17T04:56:01.3322779Z;True|2024-06-17T11:55:28.7472107+07:00;True|2024-06-17T10:49:32.0000091+07:00;True|2024-06-17T09:54:23.6995854+07:00;True|2024-06-17T09:53:48.6670692+07:00;True|2024-06-17T09:46:54.1768219+07:00;True|2024-06-08T17:37:37.6566347+07:00;</History>
+    <History>True|2024-06-17T05:17:45.4478443Z;True|2024-06-17T11:56:01.3322779+07:00;True|2024-06-17T11:55:28.7472107+07:00;True|2024-06-17T10:49:32.0000091+07:00;True|2024-06-17T09:54:23.6995854+07:00;True|2024-06-17T09:53:48.6670692+07:00;True|2024-06-17T09:46:54.1768219+07:00;True|2024-06-08T17:37:37.6566347+07:00;</History>
     <LastFailureDetails />
     <TimeStampOfAssociatedLegacyPublishXmlFile />
   </PropertyGroup>
