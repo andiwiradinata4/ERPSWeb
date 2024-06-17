@@ -123,7 +123,7 @@ namespace ERPS.Web.Controllers.API.v1
 
         [HttpPost("verify-email-confirmation-token")]
         [Authorize]
-        public async Task<IActionResult> VerifyEmailConfirmationToken([FromBody] VerifyConfirmEmailDTO dto)
+        public async Task<IActionResult> VerifyEmailConfirmationToken([FromBody] VerifyTokenDTO dto)
         {
             try
             {
@@ -169,30 +169,14 @@ namespace ERPS.Web.Controllers.API.v1
         [Authorize]
         public async Task<IActionResult> ChangeEmail([FromBody] ChangeEmailDTO dto)
         {
-            var tokenType = "CHANGE_EMAIL";
             try
             {
                 if (!ModelState.IsValid) return BadRequest(ModelState);
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                var user = await _userManager.FindByIdAsync(userId ?? "");
-                if (user == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
+                if (userId == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
 
-                if (user.Email != dto.Email) return BadRequest(new AppResponse(false, "Invalid old email.", null));
-                var token = _svc.GetTokenAsync(dto.Token);
-                if (token == null) return Unauthorized(new AppResponse(false, "Token is not valid.", null));
-                if (token.TokenType != tokenType) return Unauthorized(new AppResponse(false, "Token is not valid.", null));
-                if (token.Code != dto.Code) return Unauthorized(new AppResponse(false, "Code is not valid.", null));
-                var result = await _userManager.ChangeEmailAsync(user, dto.NewEmail, dto.Token);
-                if (result.Succeeded)
-                {
-                    _svc.GenerateCode(user, tokenType, "SUCCESS");
-
-                    return Ok(new AppResponse(true, "Success", null));
-                }
-                else
-                {
-                    return Unauthorized(new AppResponse(false, result.Errors.First().Description, null));
-                }
+                var result = await _svc.ChangeEmail(userId, dto);
+                return Ok(new AppResponse(true, "Success", null));
             }
             catch (AppException ex)
             {
@@ -208,19 +192,13 @@ namespace ERPS.Web.Controllers.API.v1
         [Authorize]
         public async Task<IActionResult> ChangePhoneNumberToken([FromBody] ChangePhoneNumberTokenDTO dto)
         {
-            var tokenType = "CHANGE_PHONE_NUMBER";
             try
             {
                 if (!ModelState.IsValid) return BadRequest(ModelState);
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                var user = await _userManager.FindByIdAsync(userId ?? "");
-
-                if (user == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
-
-                var token = await _userManager.GenerateChangePhoneNumberTokenAsync(user, dto.NewPhoneNumber);
-                var code = _svc.GenerateCode(user, tokenType, token);
-
-                return Ok(new AppResponse(true, "Success", new { token, code }));
+                if (userId == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
+                var result = await _svc.ChangePhoneNumberToken(userId, dto.NewPhoneNumber);
+                return Ok(new AppResponse(true, "Success", new { result.Token, result.Code }));
             }
             catch (AppException ex)
             {
@@ -236,30 +214,13 @@ namespace ERPS.Web.Controllers.API.v1
         [Authorize]
         public async Task<IActionResult> ChangePhoneNumber([FromBody] ChangePhoneNumberDTO dto)
         {
-            var tokenType = "CHANGE_PHONE_NUMBER";
             try
             {
                 if (!ModelState.IsValid) return BadRequest(ModelState);
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                var user = await _userManager.FindByIdAsync(userId ?? "");
-                if (user == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
-
-                if (user.PhoneNumber != null && user.PhoneNumber != dto.PhoneNumber) return BadRequest(new AppResponse(false, "Invalid old Phone Number.", null));
-                var token = _svc.GetTokenAsync(dto.Token);
-                if (token == null) return Unauthorized(new AppResponse(false, "Token is not valid.", null));
-                if (token.TokenType != tokenType) return Unauthorized(new AppResponse(false, "Token is not valid.", null));
-                if (token.Code != dto.Code) return Unauthorized(new AppResponse(false, "Code is not valid.", null));
-                var result = await _userManager.ChangePhoneNumberAsync(user, dto.NewPhoneNumber, dto.Token);
-                if (result.Succeeded)
-                {
-                    _svc.GenerateCode(user, tokenType, "SUCCESS");
-
-                    return Ok(new AppResponse(true, "Success", null));
-                }
-                else
-                {
-                    return Unauthorized(new AppResponse(false, result.Errors.First().Description, null));
-                }
+                if (userId == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
+                var result = await _svc.ChangePhoneNumber(userId, dto);
+                return Ok(new AppResponse(true, "Success", null));
             }
             catch (AppException ex)
             {
@@ -273,21 +234,22 @@ namespace ERPS.Web.Controllers.API.v1
 
         [HttpPost("reset-password-token")]
         [Authorize]
-        public async Task<IActionResult> ResetPasswordToken()
+        public async Task<IActionResult> ResetPasswordToken([FromBody] ResetPasswordTokenDTO dto)
         {
-            var tokenType = "RESET_PASSWORD";
+            //var tokenType = "RESET_PASSWORD";
             try
             {
                 if (!ModelState.IsValid) return BadRequest(ModelState);
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                var user = await _userManager.FindByIdAsync(userId ?? "");
+                //var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                //var user = await _userManager.FindByEmailAsync(dto.Email);
 
-                if (user == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
+                //if (user == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
 
-                var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-                var code = _svc.GenerateCode(user, tokenType, token);
+                //var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                //var code = _svc.GenerateCode(user, tokenType, token);
 
-                return Ok(new AppResponse(true, "Success", new { token, code }));
+                var result = await _svc.ResetPasswordToken(dto);
+                return Ok(new AppResponse(true, "Success", new { result.Token, result.Code }));
             }
             catch (AppException ex)
             {
@@ -303,30 +265,32 @@ namespace ERPS.Web.Controllers.API.v1
         [Authorize]
         public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDTO dto)
         {
-            var tokenType = "RESET_PASSWORD";
+            //var tokenType = "RESET_PASSWORD";
             try
             {
                 if (!ModelState.IsValid) return BadRequest(ModelState);
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                var user = await _userManager.FindByIdAsync(userId ?? "");
-                if (user == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
+                var result = await _svc.ResetPassword(dto);
+                return Ok(new AppResponse(true, "Success", null));
+                //var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                //var user = await _userManager.FindByIdAsync(userId ?? "");
+                //if (user == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
 
-                var token = _svc.GetTokenAsync(dto.Token);
-                if (token == null) return Unauthorized(new AppResponse(false, "Token is not valid.", null));
-                if (token.TokenType != tokenType) return Unauthorized(new AppResponse(false, "Token is not valid.", null));
-                if (token.Code != dto.Code) return Unauthorized(new AppResponse(false, "Code is not valid.", null));
-                var result = await _userManager.ResetPasswordAsync(user, dto.Token, dto.NewPassword);
+                //var token = _svc.GetToken(dto.Token);
+                //if (token == null) return Unauthorized(new AppResponse(false, "Token is not valid.", null));
+                //if (token.TokenType != tokenType) return Unauthorized(new AppResponse(false, "Token is not valid.", null));
+                //if (token.Code != dto.Code) return Unauthorized(new AppResponse(false, "Code is not valid.", null));
+                //var result = await _userManager.ResetPasswordAsync(user, dto.Token, dto.NewPassword);
 
-                if (result.Succeeded)
-                {
-                    _svc.GenerateCode(user, tokenType, "SUCCESS");
+                //if (result.Succeeded)
+                //{
+                //    _svc.GenerateCode(user, tokenType, "SUCCESS");
 
-                    return Ok(new AppResponse(true, "Success", null));
-                }
-                else
-                {
-                    return Unauthorized(new AppResponse(false, result.Errors.First().Description, null));
-                }
+                //    return Ok(new AppResponse(true, "Success", null));
+                //}
+                //else
+                //{
+                //    return Unauthorized(new AppResponse(false, result.Errors.First().Description, null));
+                //}
             }
             catch (AppException ex)
             {
@@ -346,19 +310,22 @@ namespace ERPS.Web.Controllers.API.v1
             {
                 if (!ModelState.IsValid) return BadRequest(ModelState);
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                var user = await _userManager.FindByIdAsync(userId ?? "");
-                if (user == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
+                if (userId == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
+                //var user = await _userManager.FindByIdAsync(userId ?? "");
+                //if (user == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
 
-                var result = await _userManager.ChangePasswordAsync(user, dto.CurrentPassword, dto.NewPassword);
 
-                if (result.Succeeded)
-                {
-                    return Ok(new AppResponse(true, "Success", null));
-                }
-                else
-                {
-                    return Unauthorized(new AppResponse(false, result.Errors.First().Description, null));
-                }
+                var result = await _svc.ChangePassword(userId, dto);
+                return Ok(new AppResponse(true, "Success", null));
+
+                //if (result.Succeeded)
+                //{
+                //    return Ok(new AppResponse(true, "Success", null));
+                //}
+                //else
+                //{
+                //    return Unauthorized(new AppResponse(false, result.Errors.First().Description, null));
+                //}
             }
             catch (AppException ex)
             {

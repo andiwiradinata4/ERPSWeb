@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using NetCore.Models.dto.Account;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -120,22 +121,22 @@ namespace ERPS.Infrastructure.Services
             return user;
         }
 
-        public async Task<VerifyConfirmEmailDTO> EmailConfirmationToken(string userId)
+        public async Task<VerifyTokenDTO> EmailConfirmationToken(string userId)
         {
             var tokenType = "EMAIL_CONFIRMATION";
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null) throw new AppException("User not found.");
             var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             var code = GenerateCode(user, tokenType, token);
-            return new VerifyConfirmEmailDTO { Code = code, Token = token };
+            return new VerifyTokenDTO { Code = code, Token = token };
         }
 
-        public async Task<bool> VerifyEmailConfirmationToken(string userId, VerifyConfirmEmailDTO dto)
+        public async Task<bool> VerifyEmailConfirmationToken(string userId, VerifyTokenDTO dto)
         {
             var tokenType = "EMAIL_CONFIRMATION";
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null) throw new AppException("User not found.");
-            var token = GetTokenAsync(dto.Token);
+            var token = GetToken(dto.Token);
             if (token == null || token.TokenType != tokenType) throw new AppException("Token is not valid.");
             if (token.Code != dto.Code) throw new AppException("Code is not valid.");
             var result = await _userManager.ConfirmEmailAsync(user, token.TokenValue);
@@ -150,7 +151,7 @@ namespace ERPS.Infrastructure.Services
             }
         }
 
-        public async Task<VerifyConfirmEmailDTO> ChangeEmailToken(string userId, string newEmail)
+        public async Task<VerifyTokenDTO> ChangeEmailToken(string userId, string newEmail)
         {
             var tokenType = "CHANGE_EMAIL";
             var user = await _userManager.FindByIdAsync(userId);
@@ -158,14 +159,111 @@ namespace ERPS.Infrastructure.Services
 
             var token = await _userManager.GenerateChangeEmailTokenAsync(user, newEmail);
             var code = GenerateCode(user, tokenType, token);
-            return new VerifyConfirmEmailDTO { Code = code, Token = token };
+            return new VerifyTokenDTO { Code = code, Token = token };
         }
 
-        public Task<bool> ChangeEmail(string userId, ChangeEmailDTO dto)
+        public async Task<bool> ChangeEmail(string userId, ChangeEmailDTO dto)
         {
-            throw new NotImplementedException();
+            var tokenType = "CHANGE_EMAIL";
+            var user = await _userManager.FindByIdAsync(userId ?? "");
+            if (user == null) throw new AppException("User is not valid.");
+
+            if (user.Email != dto.Email) throw new AppException("Invalid old email.");
+            var token = GetToken(dto.Token);
+            if (token == null) throw new AppException("Token is not valid.");
+            if (token.TokenType != tokenType) throw new AppException("Token is not valid.");
+            if (token.Code != dto.Code) throw new AppException("Code is not valid.");
+            var result = await _userManager.ChangeEmailAsync(user, dto.NewEmail, dto.Token);
+            if (result.Succeeded)
+            {
+                GenerateCode(user, tokenType, "SUCCESS");
+                return true;
+            }
+            else
+            {
+                throw new Exception(result.Errors.First().Description);
+            }
         }
 
+        public async Task<VerifyTokenDTO> ChangePhoneNumberToken(string userId, string newPhoneNumber)
+        {
+            var tokenType = "CHANGE_PHONE_NUMBER";
+            var user = await _userManager.FindByIdAsync(userId ?? "");
+            if (user == null) throw new AppException("User is not valid.");
+            var token = await _userManager.GenerateChangePhoneNumberTokenAsync(user, newPhoneNumber);
+            var code = GenerateCode(user, tokenType, token);
+            return new VerifyTokenDTO { Code = code, Token = token };
+        }
+
+        public async Task<bool> ChangePhoneNumber(string userId, ChangePhoneNumberDTO dto)
+        {
+            var tokenType = "CHANGE_PHONE_NUMBER";
+            var user = await _userManager.FindByIdAsync(userId ?? "");
+            if (user == null) throw new AppException("User is not valid.");
+
+            if (user.PhoneNumber != null && user.PhoneNumber != dto.PhoneNumber) throw new AppException("Invalid old Phone Number.");
+            var token = GetToken(dto.Token);
+            if (token == null) throw new AppException("Token is not valid.");
+            if (token.TokenType != tokenType) throw new AppException("Token is not valid.");
+            if (token.Code != dto.Code) throw new AppException("Code is not valid.");
+            var result = await _userManager.ChangePhoneNumberAsync(user, dto.NewPhoneNumber, dto.Token);
+            if (result.Succeeded)
+            {
+                GenerateCode(user, tokenType, "SUCCESS");
+                return true;
+            }
+            else
+            {
+                throw new AppException(result.Errors.First().Description);
+            }
+        }
+
+        public async Task<VerifyTokenDTO> ResetPasswordToken(ResetPasswordTokenDTO dto)
+        {
+            var tokenType = "RESET_PASSWORD";
+            var user = await _userManager.FindByEmailAsync(dto.Email);
+            if (user == null) throw new AppException($"Email {dto.Email} not found.");
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var code = GenerateCode(user, tokenType, token);
+            return new VerifyTokenDTO { Code = code, Token = token };
+        }
+
+        public async Task<bool> ResetPassword(ResetPasswordDTO dto)
+        {
+            var tokenType = "RESET_PASSWORD";
+            var user = await _userManager.FindByEmailAsync(dto.Email);
+            if (user == null) throw new AppException($"Email {dto.Email} not found.");
+
+            var token = GetToken(dto.Token);
+            if (token == null) throw new AppException("Token is not valid.");
+            if (token.TokenType != tokenType) throw new AppException("Token is not valid.");
+            if (token.Code != dto.Code) throw new AppException("Code is not valid.");
+            var result = await _userManager.ResetPasswordAsync(user, dto.Token, dto.NewPassword);
+            if (result.Succeeded)
+            {
+                GenerateCode(user, tokenType, "SUCCESS");
+                return true;
+            }
+            else
+            {
+                throw new AppException(result.Errors.First().Description);
+            }
+        }
+
+        public async Task<bool> ChangePassword(string userId, ChangePasswordDTO dto)
+        {
+            var user = await _userManager.FindByIdAsync(userId ?? "");
+            if (user == null) throw new AppException("User is not valid.");
+            var result = await _userManager.ChangePasswordAsync(user, dto.CurrentPassword, dto.NewPassword);
+            if (result.Succeeded)
+            {
+                return true;
+            }
+            else
+            {
+                throw new AppException(result.Errors.First().Description);
+            }
+        }
         public TokenDTO CreateJWTToken(AppUser user)
         {
             var claims = new List<Claim> {
@@ -226,7 +324,7 @@ namespace ERPS.Infrastructure.Services
             return Convert.ToBase64String(randomNumber);
         }
 
-        public Token? GetTokenAsync(string token)
+        public Token? GetToken(string token)
         {
             return _repo.GetToken(token);
         }
