@@ -5491,11 +5491,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\ERPS.Web.csproj",
+      "projectUniqueName": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ERPS.Web.csproj",
       "projectName": "ERPS.Web",
-      "projectPath": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\ERPS.Web.csproj",
+      "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ERPS.Web.csproj",
       "packagesPath": "C:\\Users\\andiw\\.nuget\\packages\\",
-      "outputPath": "D:\\My Project\\Website\\New ERPS\\ERPS.Web\\obj\\",
+      "outputPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5515,14 +5515,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\My Project\\Website\\New ERPS\\ERPS.Application\\ERPS.Application.csproj": {
-              "projectPath": "D:\\My Project\\Website\\New ERPS\\ERPS.Application\\ERPS.Application.csproj"
+            "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\ERPS.Application.csproj": {
+              "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\ERPS.Application.csproj"
             },
-            "D:\\My Project\\Website\\New ERPS\\ERPS.Core\\ERPS.Core.csproj": {
-              "projectPath": "D:\\My Project\\Website\\New ERPS\\ERPS.Core\\ERPS.Core.csproj"
+            "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj": {
+              "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj"
             },
-            "D:\\My Project\\Website\\New ERPS\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj": {
-              "projectPath": "D:\\My Project\\Website\\New ERPS\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj"
+            "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj": {
+              "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj"
             }
           }
         }
