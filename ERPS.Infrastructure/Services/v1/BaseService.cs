@@ -1,4 +1,5 @@
-﻿using ERPS.Application.Interfaces.v1;
+﻿using ERPS.Core.Entities;
+using ERPS.Application.Interfaces.v1;
 using ERPS.Core.Interfaces.v1;
 using ERPS.Infrastructure.Repositories.v1;
 
@@ -12,9 +13,9 @@ namespace ERPS.Infrastructure.Services.v1
             _repo = repo;
         }
 
-        public async Task<List<T>> GetAllAsync(string[] includes)
+        public async Task<List<T>> GetAllAsync(QueryObject query)
         {
-            var list = await _repo.GetAllAsync(includes);
+            var list = await _repo.GetAllAsync(query);
             return list;
         }
 

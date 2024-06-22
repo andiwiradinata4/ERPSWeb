@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lYhQyz/o+8mxq70WFR9BTHlZgkiHR19uljuaxJvcI3Fyb5F9lwvKtZdWAeKKnsCbArmf/gSoLYDp3bLN5U/12w==",
+  "dgSpecHash": "ALqu2wVqKi/GfumPhzeV7AqlK/x9sg0fsEIgQFo+ZV3NPP8S+Yh1gnpwbq4Q+kxWRMfMj+OM7fp8fSipvpusVw==",
   "success": true,
   "projectFilePath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ERPS.Web.csproj",
   "expectedPackageFiles": [
@@ -96,6 +96,7 @@
     "C:\\Users\\andiw\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.1.2\\system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512",
     "C:\\Users\\andiw\\.nuget\\packages\\system.io.filesystem.accesscontrol\\5.0.0\\system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\andiw\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
+    "C:\\Users\\andiw\\.nuget\\packages\\system.linq.dynamic.core\\1.4.1\\system.linq.dynamic.core.1.4.1.nupkg.sha512",
     "C:\\Users\\andiw\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\andiw\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

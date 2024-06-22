@@ -10,4 +10,8 @@
     <ProjectReference Include="..\ERPS.Core\ERPS.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\v1\Queries\" />
+  </ItemGroup>
+
 </Project>

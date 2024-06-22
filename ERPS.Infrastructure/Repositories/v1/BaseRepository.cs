@@ -2,6 +2,7 @@
 using ERPS.Core.Exceptions.v1;
 using ERPS.Infrastructure.Data.v1;
 using ERPS.Core.Interfaces.v1;
+using ERPS.Core.Entities;
 
 namespace ERPS.Infrastructure.Repositories.v1
 {
@@ -15,9 +16,9 @@ namespace ERPS.Infrastructure.Repositories.v1
             _FKValidatorRepository = new FKValidatorRepository(context);
         }
 
-        public async Task<List<T>> GetAllAsync(string[] includes)
+        public async Task<List<T>> GetAllAsync(QueryObject query)
         {
-            return await _context.SetWithIncludes<T>(includes).ToListAsync();
+            return await _context.SetQuery<T>(query).ToListAsync();
             //return await _context.Set<T>().ToListAsync();
         }
 

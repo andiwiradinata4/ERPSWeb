@@ -12,9 +12,9 @@ namespace ERPS.Infrastructure.Services.v1
             _repo = repo;
         }
 
-        public async Task<List<Status>> GetAllAsync(string[] includes)
+        public async Task<List<Status>> GetAllAsync(QueryObject query)
         {
-            return await _repo.GetAllAsync(includes);
+            return await _repo.GetAllAsync(query);
         }
 
         public async Task<Status> GetByIDAsync(dynamic id)

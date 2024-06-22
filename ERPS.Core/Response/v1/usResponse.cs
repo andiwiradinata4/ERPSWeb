@@ -19,10 +19,10 @@ namespace ERPS.Core.Response.v1
             Data = data;
         }
 
-        public AppResponse(bool success, Exception? innerexception, object? data)
+        public AppResponse(bool success, Exception? exception, object? data)
         {
             Success = success;
-            Message = innerexception == null ? "Error Not Define" : innerexception.Message;
+            Message = exception == null ? "Error Not Define" : exception.Message;
             Data = data;
         }
     }

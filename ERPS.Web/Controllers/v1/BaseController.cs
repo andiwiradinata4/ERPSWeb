@@ -3,6 +3,8 @@ using ERPS.Core.Response.v1;
 using ERPS.Application.Interfaces.v1;
 using ERPS.Core.Exceptions.v1;
 using Microsoft.AspNetCore.Authorization;
+using ERPS.Core.Entities;
+
 namespace ERPS.Web.Controllers.API.v1
 {
     public abstract class BaseController<T> : Controller where T : class
@@ -14,13 +16,13 @@ namespace ERPS.Web.Controllers.API.v1
             _svc = svc;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Authorize]
-        public virtual async Task<IActionResult> GetAll([FromQuery] string[] includes)
+        public virtual async Task<IActionResult> GetAll([FromBody] QueryObject query)
         {
             try
             {
-                return Ok(new AppResponse(true, "Get All Data Success", await _svc.GetAllAsync(includes)));
+                return Ok(new AppResponse(true, "Get All Data Success", await _svc.GetAllAsync(query)));
             }
             catch (AppException ex)
             {
@@ -28,7 +30,25 @@ namespace ERPS.Web.Controllers.API.v1
             }
             catch (Exception ex)
             {
-                return BadRequest(new AppResponse(false, ex.InnerException, null));
+                return BadRequest(new AppResponse(false, ex, null));
+            }
+        }
+
+        [HttpGet]
+        [Authorize]
+        public virtual async Task<IActionResult> GetAll()
+        {
+            try
+            {
+                return Ok(new AppResponse(true, "Get All Data Success", await _svc.GetAllAsync(new QueryObject())));
+            }
+            catch (AppException ex)
+            {
+                return BadRequest(new AppResponse(false, ex.Message, null));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new AppResponse(false, ex, null));
             }
         }
 
@@ -46,11 +66,11 @@ namespace ERPS.Web.Controllers.API.v1
             }
             catch (Exception ex)
             {
-                return BadRequest(new AppResponse(false, ex.InnerException, null));
+                return BadRequest(new AppResponse(false, ex, null));
             }
         }
 
-        [HttpPost]
+        [HttpPost("create")]
         [Authorize]
         public virtual async Task<IActionResult> Create([FromBody] T entity)
         {
@@ -110,7 +130,7 @@ namespace ERPS.Web.Controllers.API.v1
             }
             catch (Exception ex)
             {
-                return BadRequest(new AppResponse(false, ex.InnerException, null));
+                return BadRequest(new AppResponse(false, ex, null));
             }
 
         }

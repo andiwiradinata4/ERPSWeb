@@ -305,3 +305,4 @@ D:\My Project\Website\ERPS\BE\ERPS.Web\obj\Debug\net8.0\refint\ERPS.Web.dll
 D:\My Project\Website\ERPS\BE\ERPS.Web\obj\Debug\net8.0\ERPS.Web.pdb
 D:\My Project\Website\ERPS\BE\ERPS.Web\obj\Debug\net8.0\ERPS.Web.genruntimeconfig.cache
 D:\My Project\Website\ERPS\BE\ERPS.Web\obj\Debug\net8.0\ref\ERPS.Web.dll
+D:\My Project\Website\ERPS\BE\ERPS.Web\bin\Debug\net8.0\System.Linq.Dynamic.Core.dll
