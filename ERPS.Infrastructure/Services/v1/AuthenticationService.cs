@@ -273,11 +273,15 @@ namespace ERPS.Infrastructure.Services.v1
                 //new Claim(JwtRegisteredClaimNames.GivenName, user.UserName ?? "")
             };
 
+            var expires = _configuration["JWT:Expires"];
+            double.TryParse(expires ?? "10", out double doubleExpires);
+
+
             var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.Now.AddMinutes(15),
+                Expires = DateTime.Now.AddMinutes(doubleExpires),
                 SigningCredentials = creds,
                 Issuer = _configuration["JWT:Issuer"],
                 Audience = _configuration["JWT:Audience"]
