@@ -45,8 +45,7 @@
               "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
               "ViewState": "AQIAAM0AAAAAAAAAAAAUwN4AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T08:56:48.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-29T08:56:48.576Z"
             },
             {
               "$type": "Document",
@@ -58,8 +57,7 @@
               "RelativeToolTip": "..\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T08:56:35.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-29T08:56:35.666Z"
             }
           ]
         }
