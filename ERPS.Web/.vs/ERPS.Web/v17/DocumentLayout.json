@@ -1,12 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\",
+  "WorkspaceRootPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\services\\v1\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|c:\\project\\web\\erpsweb\\erps.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\repositories\\v1\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|c:\\project\\web\\erpsweb\\erps.infrastructure\\services\\v1\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|c:\\project\\web\\erpsweb\\erps.infrastructure\\repositories\\v1\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,27 +25,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
-              "ViewState": "AQIAAPcAAAAAAAAAAAAvwAIBAAANAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T05:36:55.467Z",
+              "WhenOpened": "2024-06-29T08:58:16.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthenticationRepository.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAnAAAA",
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
+              "ToolTip": "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
+              "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
+              "ViewState": "AQIAAM0AAAAAAAAAAAAUwN4AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T05:36:47.258Z",
+              "WhenOpened": "2024-06-29T08:56:48.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthenticationRepository.cs",
+              "DocumentMoniker": "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
+              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
+              "ToolTip": "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
+              "RelativeToolTip": "..\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T08:56:35.666Z",
               "EditorCaption": ""
             }
           ]

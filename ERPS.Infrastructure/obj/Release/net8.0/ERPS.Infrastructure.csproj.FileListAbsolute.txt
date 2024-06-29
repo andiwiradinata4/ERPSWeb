@@ -17,3 +17,23 @@ D:\My Project\Website\New ERPS\ERPS.Infrastructure\obj\Release\net8.0\refint\ERP
 D:\My Project\Website\New ERPS\ERPS.Infrastructure\obj\Release\net8.0\ERPS.Infrastructure.pdb
 D:\My Project\Website\New ERPS\ERPS.Infrastructure\obj\Release\net8.0\ERPS.Infrastructure.genruntimeconfig.cache
 D:\My Project\Website\New ERPS\ERPS.Infrastructure\obj\Release\net8.0\ref\ERPS.Infrastructure.dll
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\bin\Release\net8.0\ERPS.Infrastructure.deps.json
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\bin\Release\net8.0\ERPS.Infrastructure.runtimeconfig.json
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\bin\Release\net8.0\ERPS.Infrastructure.dll
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\bin\Release\net8.0\ERPS.Infrastructure.pdb
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\bin\Release\net8.0\ERPS.Application.dll
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\bin\Release\net8.0\ERPS.Core.dll
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\bin\Release\net8.0\ERPS.Application.pdb
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\bin\Release\net8.0\ERPS.Core.pdb
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\obj\Release\net8.0\ERPS.Infrastructure.csproj.AssemblyReference.cache
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\obj\Release\net8.0\ERPS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\obj\Release\net8.0\ERPS.Infrastructure.AssemblyInfoInputs.cache
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\obj\Release\net8.0\ERPS.Infrastructure.AssemblyInfo.cs
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\obj\Release\net8.0\ERPS.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\obj\Release\net8.0\ERPS.Infrastructure.sourcelink.json
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\obj\Release\net8.0\ERPS.Inf.79DDA9BF.Up2Date
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\obj\Release\net8.0\ERPS.Infrastructure.dll
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\obj\Release\net8.0\refint\ERPS.Infrastructure.dll
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\obj\Release\net8.0\ERPS.Infrastructure.pdb
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\obj\Release\net8.0\ERPS.Infrastructure.genruntimeconfig.cache
+C:\Project\Web\ERPSWeb\ERPS.Infrastructure\obj\Release\net8.0\ref\ERPS.Infrastructure.dll

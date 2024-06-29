@@ -10,3 +10,16 @@ D:\My Project\Website\New ERPS\ERPS.Core\obj\Release\net8.0\ERPS.Core.dll
 D:\My Project\Website\New ERPS\ERPS.Core\obj\Release\net8.0\refint\ERPS.Core.dll
 D:\My Project\Website\New ERPS\ERPS.Core\obj\Release\net8.0\ERPS.Core.pdb
 D:\My Project\Website\New ERPS\ERPS.Core\obj\Release\net8.0\ref\ERPS.Core.dll
+C:\Project\Web\ERPSWeb\ERPS.Core\bin\Release\net8.0\ERPS.Core.deps.json
+C:\Project\Web\ERPSWeb\ERPS.Core\bin\Release\net8.0\ERPS.Core.dll
+C:\Project\Web\ERPSWeb\ERPS.Core\bin\Release\net8.0\ERPS.Core.pdb
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Release\net8.0\ERPS.Core.csproj.AssemblyReference.cache
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Release\net8.0\ERPS.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Release\net8.0\ERPS.Core.AssemblyInfoInputs.cache
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Release\net8.0\ERPS.Core.AssemblyInfo.cs
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Release\net8.0\ERPS.Core.csproj.CoreCompileInputs.cache
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Release\net8.0\ERPS.Core.sourcelink.json
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Release\net8.0\ERPS.Core.dll
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Release\net8.0\refint\ERPS.Core.dll
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Release\net8.0\ERPS.Core.pdb
+C:\Project\Web\ERPSWeb\ERPS.Core\obj\Release\net8.0\ref\ERPS.Core.dll

@@ -13,3 +13,19 @@ D:\My Project\Website\New ERPS\ERPS.Application\obj\Release\net8.0\ERPS.Applicat
 D:\My Project\Website\New ERPS\ERPS.Application\obj\Release\net8.0\refint\ERPS.Application.dll
 D:\My Project\Website\New ERPS\ERPS.Application\obj\Release\net8.0\ERPS.Application.pdb
 D:\My Project\Website\New ERPS\ERPS.Application\obj\Release\net8.0\ref\ERPS.Application.dll
+C:\Project\Web\ERPSWeb\ERPS.Application\bin\Release\net8.0\ERPS.Application.deps.json
+C:\Project\Web\ERPSWeb\ERPS.Application\bin\Release\net8.0\ERPS.Application.dll
+C:\Project\Web\ERPSWeb\ERPS.Application\bin\Release\net8.0\ERPS.Application.pdb
+C:\Project\Web\ERPSWeb\ERPS.Application\bin\Release\net8.0\ERPS.Core.dll
+C:\Project\Web\ERPSWeb\ERPS.Application\bin\Release\net8.0\ERPS.Core.pdb
+C:\Project\Web\ERPSWeb\ERPS.Application\obj\Release\net8.0\ERPS.Application.csproj.AssemblyReference.cache
+C:\Project\Web\ERPSWeb\ERPS.Application\obj\Release\net8.0\ERPS.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\Web\ERPSWeb\ERPS.Application\obj\Release\net8.0\ERPS.Application.AssemblyInfoInputs.cache
+C:\Project\Web\ERPSWeb\ERPS.Application\obj\Release\net8.0\ERPS.Application.AssemblyInfo.cs
+C:\Project\Web\ERPSWeb\ERPS.Application\obj\Release\net8.0\ERPS.Application.csproj.CoreCompileInputs.cache
+C:\Project\Web\ERPSWeb\ERPS.Application\obj\Release\net8.0\ERPS.Application.sourcelink.json
+C:\Project\Web\ERPSWeb\ERPS.Application\obj\Release\net8.0\ERPS.App.A5BFF966.Up2Date
+C:\Project\Web\ERPSWeb\ERPS.Application\obj\Release\net8.0\ERPS.Application.dll
+C:\Project\Web\ERPSWeb\ERPS.Application\obj\Release\net8.0\refint\ERPS.Application.dll
+C:\Project\Web\ERPSWeb\ERPS.Application\obj\Release\net8.0\ERPS.Application.pdb
+C:\Project\Web\ERPSWeb\ERPS.Application\obj\Release\net8.0\ref\ERPS.Application.dll

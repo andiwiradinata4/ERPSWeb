@@ -105,7 +105,7 @@ namespace ERPS.Web.Controllers.API.v1
                 if (userId == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
 
                 var result = await _svc.EmailConfirmationToken(userId);
-                return Ok(new AppResponse(true, "Success", new { result.Token, result.Code }));
+                return Ok(new AppResponse(true, "Success", new { result.AccessToken, result.Code }));
             }
             catch (AppException ex)
             {
@@ -149,7 +149,7 @@ namespace ERPS.Web.Controllers.API.v1
                 if (userId == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
 
                 var result = await _svc.ChangeEmailToken(userId, dto.NewEmail);
-                return Ok(new AppResponse(true, "Success", new { result.Token, result.Code }));
+                return Ok(new AppResponse(true, "Success", new { result.AccessToken, result.Code }));
             }
             catch (AppException ex)
             {
@@ -194,7 +194,7 @@ namespace ERPS.Web.Controllers.API.v1
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 if (userId == null) return Unauthorized(new AppResponse(false, "User is not valid.", null));
                 var result = await _svc.ChangePhoneNumberToken(userId, dto.NewPhoneNumber);
-                return Ok(new AppResponse(true, "Success", new { result.Token, result.Code }));
+                return Ok(new AppResponse(true, "Success", new { result.AccessToken, result.Code }));
             }
             catch (AppException ex)
             {
@@ -235,7 +235,7 @@ namespace ERPS.Web.Controllers.API.v1
             {
                 if (!ModelState.IsValid) return BadRequest(ModelState);
                 var result = await _svc.ResetPasswordToken(dto);
-                return Ok(new AppResponse(true, "Success", new { result.Token, result.Code }));
+                return Ok(new AppResponse(true, "Success", new { result.AccessToken, result.Code }));
             }
             catch (AppException ex)
             {

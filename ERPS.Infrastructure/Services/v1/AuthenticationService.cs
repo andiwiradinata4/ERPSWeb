@@ -128,7 +128,7 @@ namespace ERPS.Infrastructure.Services.v1
             if (user == null) throw new AppException("User not found.");
             var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             var code = GenerateCode(user, tokenType, token);
-            return new VerifyTokenDTO { Code = code, Token = token };
+            return new VerifyTokenDTO { Code = code, AccessToken = token };
         }
 
         public async Task<bool> VerifyEmailConfirmationToken(string userId, VerifyTokenDTO dto)
@@ -136,7 +136,7 @@ namespace ERPS.Infrastructure.Services.v1
             var tokenType = "EMAIL_CONFIRMATION";
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null) throw new AppException("User not found.");
-            var token = GetToken(dto.Token);
+            var token = GetToken(dto.AccessToken);
             if (token == null || token.TokenType != tokenType) throw new AppException("Token is not valid.");
             if (token.Code != dto.Code) throw new AppException("Code is not valid.");
             var result = await _userManager.ConfirmEmailAsync(user, token.TokenValue);
@@ -159,7 +159,7 @@ namespace ERPS.Infrastructure.Services.v1
 
             var token = await _userManager.GenerateChangeEmailTokenAsync(user, newEmail);
             var code = GenerateCode(user, tokenType, token);
-            return new VerifyTokenDTO { Code = code, Token = token };
+            return new VerifyTokenDTO { Code = code, AccessToken = token };
         }
 
         public async Task<bool> ChangeEmail(string userId, ChangeEmailDTO dto)
@@ -192,7 +192,7 @@ namespace ERPS.Infrastructure.Services.v1
             if (user == null) throw new AppException("User is not valid.");
             var token = await _userManager.GenerateChangePhoneNumberTokenAsync(user, newPhoneNumber);
             var code = GenerateCode(user, tokenType, token);
-            return new VerifyTokenDTO { Code = code, Token = token };
+            return new VerifyTokenDTO { Code = code, AccessToken = token };
         }
 
         public async Task<bool> ChangePhoneNumber(string userId, ChangePhoneNumberDTO dto)
@@ -225,7 +225,7 @@ namespace ERPS.Infrastructure.Services.v1
             if (user == null) throw new AppException($"Email {dto.Email} not found.");
             var token = await _userManager.GeneratePasswordResetTokenAsync(user);
             var code = GenerateCode(user, tokenType, token);
-            return new VerifyTokenDTO { Code = code, Token = token };
+            return new VerifyTokenDTO { Code = code, AccessToken = token };
         }
 
         public async Task<bool> ResetPassword(ResetPasswordDTO dto)
