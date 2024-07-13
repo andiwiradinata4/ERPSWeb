@@ -4,6 +4,7 @@ using ERPS.Application.Interfaces.v1;
 using ERPS.Core.Exceptions.v1;
 using Microsoft.AspNetCore.Authorization;
 using ERPS.Core.Entities;
+using System.Security.Claims;
 
 namespace ERPS.Web.Controllers.API.v1
 {
@@ -77,7 +78,8 @@ namespace ERPS.Web.Controllers.API.v1
             try
             {
                 if (!ModelState.IsValid) return BadRequest(ModelState);
-                dynamic data = await _svc.CreateAsync(entity);
+                string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "";
+                dynamic data = await _svc.CreateAsync(entity, userId);
                 return Ok(new AppResponse(true,
                                           "Create Data Success",
                                           new { data.ID }));
@@ -99,7 +101,8 @@ namespace ERPS.Web.Controllers.API.v1
             try
             {
                 if (!ModelState.IsValid) return BadRequest(ModelState);
-                var data = await _svc.UpdateAsync(id, entity);
+                string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "";
+                var data = await _svc.UpdateAsync(id, entity, userId);
                 return Ok(new AppResponse(true,
                                           "Update Data Success",
                                           new { id }));

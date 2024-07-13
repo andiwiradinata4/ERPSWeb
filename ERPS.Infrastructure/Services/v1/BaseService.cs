@@ -24,19 +24,19 @@ namespace ERPS.Infrastructure.Services.v1
             return await _repo.GetByIDAsync(id);
         }
 
+        public async Task<T> CreateAsync(T entity, string userId)
+        {
+            return await _repo.CreateAsync(entity, true);
+        }
+
+        public async Task<T> UpdateAsync(dynamic id, T entity, string userId)
+        {
+            return await _repo.UpdateAsync(id, entity, true);
+        }
+
         public async Task<T> DeleteAsync(dynamic id)
         {
-            return await _repo.DeleteAsync(id);
-        }
-
-        public async Task<T> CreateAsync(T entity)
-        {
-            return await _repo.CreateAsync(entity);
-        }
-
-        public async Task<T> UpdateAsync(dynamic id, T entity)
-        {
-            return await _repo.UpdateAsync(id, entity);
+            return await _repo.DeleteAsync(id, true);
         }
 
     }

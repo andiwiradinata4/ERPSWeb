@@ -37,26 +37,15 @@ namespace ERPS.Infrastructure.Repositories.v1
             return ids.Any() ? ids.Max() + 1 : 1;
         }
 
-        public async Task<T> DeleteAsync(dynamic id)
-        {
-            int intID = 0;
-            int.TryParse(id.ToString(), out intID);
-            var idValue = intID <= 0 ? id : intID;
-            var data = await _context.Set<T>().FindAsync(idValue) ?? throw new AppException("Data not found");
-            _context.Set<T>().Remove(data);
-            await _context.SaveChangesAsync();
-            return data;
-        }
-
-        public async Task<T> CreateAsync(T entity)
+        public async Task<T> CreateAsync(T entity, bool useTransaction = false)
         {
             await _FKValidatorRepository.ValidateFKAsync(entity);
             await _context.Set<T>().AddAsync(entity);
-            await _context.SaveChangesAsync();
+            if (!useTransaction) await _context.SaveChangesAsync();
             return entity;
         }
 
-        public async Task<T> UpdateAsync(dynamic id, T entity)
+        public async Task<T> UpdateAsync(dynamic id, T entity, bool useTransaction = false)
         {
             await _FKValidatorRepository.ValidateFKAsync(entity);
 
@@ -80,8 +69,19 @@ namespace ERPS.Infrastructure.Repositories.v1
             }
 
             _context.Entry(dataExists).CurrentValues.SetValues(entity);
-            await _context.SaveChangesAsync();
+            if (!useTransaction) await _context.SaveChangesAsync();
             return entity;
+        }
+
+        public async Task<T> DeleteAsync(dynamic id, bool useTransaction = false)
+        {
+            int intID = 0;
+            int.TryParse(id.ToString(), out intID);
+            var idValue = intID <= 0 ? id : intID;
+            var data = await _context.Set<T>().FindAsync(idValue) ?? throw new AppException("Data not found");
+            _context.Set<T>().Remove(data);
+            if (!useTransaction) await _context.SaveChangesAsync();
+            return data;
         }
 
         private bool NeedReplace(string propertyName)
