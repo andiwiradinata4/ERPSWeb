@@ -86,6 +86,7 @@ namespace ERPS.Infrastructure.Services.v1
             var resultSetAuthentication = await _userManager.SetAuthenticationTokenAsync(user, token.Issuer, token.UserName, token.AccessToken);
             if (resultSetAuthentication.Succeeded)
             {
+                /// Send Email Notif login success in device ____
                 return token;
             }
             else
@@ -128,6 +129,7 @@ namespace ERPS.Infrastructure.Services.v1
             if (user == null) throw new AppException("User not found.");
             var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             var code = GenerateCode(user, tokenType, token);
+            /// Send Email Notif for Verification Code
             return new VerifyTokenDTO { Code = code, AccessToken = token };
         }
 
@@ -143,6 +145,7 @@ namespace ERPS.Infrastructure.Services.v1
             if (result.Succeeded)
             {
                 GenerateCode(user, tokenType, "SUCCESS");
+                /// Send Email Notif for Success Verified Email Address
                 return true;
             }
             else
@@ -159,6 +162,7 @@ namespace ERPS.Infrastructure.Services.v1
 
             var token = await _userManager.GenerateChangeEmailTokenAsync(user, newEmail);
             var code = GenerateCode(user, tokenType, token);
+            /// Send Email Notif for Verification Code
             return new VerifyTokenDTO { Code = code, AccessToken = token };
         }
 
@@ -177,6 +181,7 @@ namespace ERPS.Infrastructure.Services.v1
             if (result.Succeeded)
             {
                 GenerateCode(user, tokenType, "SUCCESS");
+                /// Send Email Notif for Success Change Email Address
                 return true;
             }
             else
@@ -192,6 +197,7 @@ namespace ERPS.Infrastructure.Services.v1
             if (user == null) throw new AppException("User is not valid.");
             var token = await _userManager.GenerateChangePhoneNumberTokenAsync(user, newPhoneNumber);
             var code = GenerateCode(user, tokenType, token);
+            /// Send Email Notif for Verification Code
             return new VerifyTokenDTO { Code = code, AccessToken = token };
         }
 
@@ -210,6 +216,7 @@ namespace ERPS.Infrastructure.Services.v1
             if (result.Succeeded)
             {
                 GenerateCode(user, tokenType, "SUCCESS");
+                /// Send Email Notif for Success Change Phone Number
                 return true;
             }
             else
@@ -225,6 +232,7 @@ namespace ERPS.Infrastructure.Services.v1
             if (user == null) throw new AppException($"Email {dto.Email} not found.");
             var token = await _userManager.GeneratePasswordResetTokenAsync(user);
             var code = GenerateCode(user, tokenType, token);
+            /// Send Email Notif for Verification Code
             return new VerifyTokenDTO { Code = code, AccessToken = token };
         }
 
@@ -242,6 +250,7 @@ namespace ERPS.Infrastructure.Services.v1
             if (result.Succeeded)
             {
                 GenerateCode(user, tokenType, "SUCCESS");
+                /// Send Email Notif for Success Reset Password
                 return true;
             }
             else
@@ -257,6 +266,7 @@ namespace ERPS.Infrastructure.Services.v1
             var result = await _userManager.ChangePasswordAsync(user, dto.CurrentPassword, dto.NewPassword);
             if (result.Succeeded)
             {
+                /// Send Email Notif for Success Change Password
                 return true;
             }
             else
