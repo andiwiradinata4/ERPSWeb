@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ERPS.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44fb56a6e6ae668219cb5ae410486ef041803f8e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48d012c6bb30766fb94d32d57e99fc16ec287503")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERPS.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERPS.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
