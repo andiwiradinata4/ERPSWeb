@@ -1,5 +1,6 @@
 ﻿using ERPS.Application.DTOs.v1.Authentication;
 using ERPS.Application.Interfaces.v1;
+using ERPS.Core.Entities;
 using ERPS.Core.Exceptions.v1;
 using ERPS.Core.Response.v1;
 using Microsoft.AspNetCore.Authorization;
@@ -11,13 +12,88 @@ namespace ERPS.Web.Controllers.API.v1
 {
     [Route("api/v1/auth")]
     [ApiController]
-    public class AuthenticationController: ControllerBase
+    public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticationService _svc;
 
         public AuthenticationController(IAuthenticationService svc)
         {
             _svc = svc;
+        }
+
+        [HttpPost]
+        [Authorize]
+        public virtual async Task<IActionResult> GetAll([FromBody] QueryObject query)
+        {
+            try
+            {
+                return Ok(new AppResponse(true, "Get All Data Success", await _svc.GetAllAsync(query)));
+            }
+            catch (AppException ex)
+            {
+                return BadRequest(new AppResponse(false, ex.Message, null));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new AppResponse(false, ex, null));
+            }
+        }
+
+        [HttpGet]
+        [Authorize]
+        public virtual async Task<IActionResult> GetAll()
+        {
+            try
+            {
+                return Ok(new AppResponse(true, "Get All Data Success", await _svc.GetAllAsync(new QueryObject())));
+            }
+            catch (AppException ex)
+            {
+                return BadRequest(new AppResponse(false, ex.Message, null));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new AppResponse(false, ex, null));
+            }
+        }
+
+        [HttpGet("{id}")]
+        [Authorize]
+        public virtual async Task<IActionResult> GetByID([FromRoute] string id)
+        {
+            try
+            {
+                return Ok(new AppResponse(true, "Get Data Success", await _svc.GetByIDAsync(id)));
+            }
+            catch (AppException ex)
+            {
+                return BadRequest(new AppResponse(false, ex.Message, null));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new AppResponse(false, ex, null));
+            }
+        }
+
+        [HttpDelete("{id}")]
+        [Authorize]
+        public async Task<IActionResult> Delete([FromRoute] string id)
+        {
+            try
+            {
+                if (!ModelState.IsValid) return BadRequest(ModelState);
+                var data = await _svc.DeleteAsync(id);
+                return Ok(new AppResponse(true, "Delete Data Success", null));
+            }
+            catch (AppException ex)
+            {
+                return BadRequest(new AppResponse(false, ex.Message, null));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new AppResponse(false, ex, null));
+            }
+
         }
 
         [HttpPost("register")]

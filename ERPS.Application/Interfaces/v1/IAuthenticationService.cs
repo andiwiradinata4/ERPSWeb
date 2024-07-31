@@ -4,7 +4,7 @@ using NetCore.Models.dto.Account;
 
 namespace ERPS.Application.Interfaces.v1
 {
-    public interface IAuthenticationService
+    public interface IAuthenticationService : IBaseService<AppUser>
     {
         Task<TokenDTO> Register(RegisterDTO user);
         Token? GetToken(string token);

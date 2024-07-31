@@ -47,6 +47,7 @@ namespace ERPS.Infrastructure.Services.v1
 
         public async Task<Gender> UpdateAsync(dynamic id, Gender data, string userId)
         {
+            data.LogBy = userId;
             return await _repo.UpdateAsync(id, data, true);
         }
 

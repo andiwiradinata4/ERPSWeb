@@ -2,7 +2,7 @@
 
 namespace ERPS.Core.Interfaces.v1
 {
-    public interface IAuthenticationRepository
+    public interface IAuthenticationRepository : IBaseRepository<AppUser>
     {
         Token? GetToken(string token);
         Task<Token?> GetTokenByUserIDAsync(string userID);

@@ -5,9 +5,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ERPS.Infrastructure.Repositories.v1
 {
-    public class AuthenticationRepository(AppDBContext context) : IAuthenticationRepository
+    public class AuthenticationRepository : BaseRepository<AppUser>, IAuthenticationRepository
     {
-        private readonly AppDBContext _context = context;
+        private readonly AppDBContext _context;
+        public AuthenticationRepository(AppDBContext context) : base(context)
+        {
+            _context = context;
+        }
 
         Token? IAuthenticationRepository.GetToken(string tokenValue)
         {

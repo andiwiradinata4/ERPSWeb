@@ -11,7 +11,7 @@ using NetCore.Models.dto.Account;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
-using System.Text;
+using System.Text; 
 namespace ERPS.Infrastructure.Services.v1
 {
     public class AuthenticationService : IAuthenticationService
@@ -366,5 +366,29 @@ namespace ERPS.Infrastructure.Services.v1
             return code;
         }
 
+        public async Task<List<AppUser>> GetAllAsync(QueryObject query)
+        {
+            return await _repo.GetAllAsync(query);
+        }
+
+        public async Task<AppUser> GetByIDAsync(dynamic id)
+        {
+            return await _repo.GetByIDAsync(id);
+        }
+
+        public async Task<AppUser> DeleteAsync(dynamic id)
+        {
+            return await _repo.DeleteAsync(id);
+        }
+
+        public Task<AppUser> CreateAsync(AppUser entity, string userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<AppUser> UpdateAsync(dynamic id, AppUser entity, string userId)
+        {
+            return await _repo.UpdateAsync(id, entity, true);
+        }
     }
 }
