@@ -28,8 +28,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\v1\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v1\\AuthenticationController.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\v1\\AuthenticationController.cs",
+              "RelativeToolTip": "Controllers\\v1\\AuthenticationController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAowGsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T13:36:38.789Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -53,19 +66,6 @@
               "ViewState": "AQIAAFgBAAAAAAAAAAAYwH4BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-13T05:23:26.081Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\v1\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\v1\\AuthenticationController.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\v1\\AuthenticationController.cs",
-              "RelativeToolTip": "Controllers\\v1\\AuthenticationController.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAowGQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T13:36:38.789Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
