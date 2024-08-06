@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NetCore.Models.dto.Account;
 using System.Security.Claims;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace ERPS.Web.Controllers.API.v1
 {
@@ -19,6 +20,24 @@ namespace ERPS.Web.Controllers.API.v1
         public AuthenticationController(IAuthenticationService svc)
         {
             _svc = svc;
+        }
+
+        [HttpGet("check-connection")]
+        public async Task<IActionResult> CheckConnection()
+        {
+            try
+            {
+                var data = await _svc.GetAllAsync(new QueryObject());
+                return Ok(new AppResponse(true, "Check Connection Success", null));
+            }
+            catch (AppException ex)
+            {
+                return BadRequest(new AppResponse(false, ex.Message, null));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new AppResponse(false, ex, null));
+            }
         }
 
         [HttpPost]
