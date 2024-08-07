@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using NetCore.Models.dto.Account;
 using System.IdentityModel.Tokens.Jwt;
+using System.Numerics;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text; 
@@ -369,6 +370,11 @@ namespace ERPS.Infrastructure.Services.v1
         public async Task<List<AppUser>> GetAllAsync(QueryObject query)
         {
             return await _repo.GetAllAsync(query);
+        }
+
+        public async Task<BigInteger> GetTotalPageAsync(QueryObject query)
+        {
+            return await _repo.GetTotalPageAsync(query);
         }
 
         public async Task<AppUser> GetByIDAsync(dynamic id)

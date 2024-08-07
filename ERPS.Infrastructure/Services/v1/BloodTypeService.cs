@@ -2,6 +2,7 @@
 using ERPS.Application.Interfaces.v1;
 using ERPS.Core.Interfaces.v1;
 using ERPS.Infrastructure.Data.v1;
+using System.Numerics;
 
 namespace ERPS.Infrastructure.Services.v1
 {
@@ -53,6 +54,11 @@ namespace ERPS.Infrastructure.Services.v1
         public async Task<BloodType> DeleteAsync(dynamic id)
         {
             return await _repo.DeleteAsync(id, true);
+        }
+
+        public async Task<BigInteger> GetTotalPageAsync(QueryObject query)
+        {
+            return await _repo.GetTotalPageAsync(query);
         }
 
     }

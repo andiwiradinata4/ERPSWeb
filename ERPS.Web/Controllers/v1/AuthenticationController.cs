@@ -6,6 +6,7 @@ using ERPS.Core.Response.v1;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NetCore.Models.dto.Account;
+using System.Numerics;
 using System.Security.Claims;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
@@ -46,7 +47,9 @@ namespace ERPS.Web.Controllers.API.v1
         {
             try
             {
-                return Ok(new AppResponse(true, "Get All Data Success", await _svc.GetAllAsync(query)));
+                BigInteger count = await _svc.GetTotalPageAsync(query);
+                BigInteger totalPage = query.PageSize > 0 ? query.PageSize > count ? 1 : count / query.PageSize : 0;
+                return Ok(new AppResponse(true, "Get All Data Success", count, totalPage, await _svc.GetAllAsync(query)));
             }
             catch (AppException ex)
             {
@@ -64,6 +67,8 @@ namespace ERPS.Web.Controllers.API.v1
         {
             try
             {
+                BigInteger count = await _svc.GetTotalPageAsync(new QueryObject());
+                BigInteger totalPage = 0;
                 return Ok(new AppResponse(true, "Get All Data Success", await _svc.GetAllAsync(new QueryObject())));
             }
             catch (AppException ex)

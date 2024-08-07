@@ -3,6 +3,7 @@ using ERPS.Core.Exceptions.v1;
 using ERPS.Infrastructure.Data.v1;
 using ERPS.Core.Interfaces.v1;
 using ERPS.Core.Entities;
+using System.Numerics;
 
 namespace ERPS.Infrastructure.Repositories.v1
 {
@@ -19,7 +20,13 @@ namespace ERPS.Infrastructure.Repositories.v1
         public async Task<List<T>> GetAllAsync(QueryObject query)
         {
             return await _context.SetQuery<T>(query).ToListAsync();
-            //return await _context.Set<T>().ToListAsync();
+        }
+
+        public async Task<BigInteger> GetTotalPageAsync(QueryObject query)
+        {
+            var data = await _context.SetQueryTotalPage<T>(query).ToListAsync();
+            if (data == null) return 0;
+            return data.Count;
         }
 
         public async Task<T> GetByIDAsync(dynamic id)

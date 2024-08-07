@@ -1,16 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Numerics;
 
 namespace ERPS.Core.Response.v1
 {
     public class AppResponse
     {
+        public BigInteger Count {  get; set; }
+        public BigInteger TotalPage {  get; set; }
         public bool Success { get; set; }
         public string Message { get; set; }
         public object? Data { get; set; }
+
+        public AppResponse(bool success, string message, BigInteger count, BigInteger totalPage, object? data)
+        {
+            Success = success;
+            Message = message;
+            Count = count;
+            TotalPage = totalPage;
+            Data = data;
+        }
 
         public AppResponse(bool success, string message, object? data)
         {
