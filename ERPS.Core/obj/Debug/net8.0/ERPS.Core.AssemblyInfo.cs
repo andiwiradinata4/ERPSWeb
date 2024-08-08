@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ERPS.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+545a41ba7194097bada0ae91917928eda542c341")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d27bcfd362dc249883245af48da262282c2a1816")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERPS.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERPS.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

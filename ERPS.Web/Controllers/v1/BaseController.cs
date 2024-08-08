@@ -5,6 +5,7 @@ using ERPS.Core.Exceptions.v1;
 using Microsoft.AspNetCore.Authorization;
 using ERPS.Core.Entities;
 using System.Security.Claims;
+using System.Numerics;
 
 namespace ERPS.Web.Controllers.API.v1
 {
@@ -23,7 +24,9 @@ namespace ERPS.Web.Controllers.API.v1
         {
             try
             {
-                return Ok(new AppResponse(true, "Get All Data Success", await _svc.GetAllAsync(query)));
+                BigInteger count = await _svc.GetTotalPageAsync(query);
+                BigInteger totalPage = (int)Math.Ceiling((double)count / query.PageSize);
+                return Ok(new AppResponse(true, "Get All Data Success", count, totalPage, await _svc.GetAllAsync(query)));
             }
             catch (AppException ex)
             {
