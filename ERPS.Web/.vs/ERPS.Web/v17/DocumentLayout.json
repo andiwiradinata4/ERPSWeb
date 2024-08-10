@@ -1,69 +1,69 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\",
+  "WorkspaceRootPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\controllers\\v1\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|c:\\project\\web\\erpsweb\\erps.web\\controllers\\v1\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:controllers\\v1\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\response\\v1\\usresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\services\\v1\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\data\\v1\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\controllers\\v1\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|c:\\project\\web\\erpsweb\\erps.web\\controllers\\v1\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:controllers\\v1\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\queryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\services\\v1\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\services\\v1\\statusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\services\\v1\\religionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\services\\v1\\nationalityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\services\\v1\\maritalstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\services\\v1\\genderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\services\\v1\\bloodtypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52DB3B1C-9FD3-43C8-BB1B-3AE8170CF701}|..\\ERPS.Application\\ERPS.Application.csproj|d:\\my project\\website\\erps\\be\\erps.application\\interfaces\\v1\\ibloodtypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52DB3B1C-9FD3-43C8-BB1B-3AE8170CF701}|..\\ERPS.Application\\ERPS.Application.csproj|d:\\my project\\website\\erps\\be\\erps.application\\interfaces\\v1\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\interfaces\\v1\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52DB3B1C-9FD3-43C8-BB1B-3AE8170CF701}|..\\ERPS.Application\\ERPS.Application.csproj|d:\\my project\\website\\erps\\be\\erps.application\\interfaces\\v1\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\repositories\\v1\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\repositories\\v1\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|c:\\project\\web\\erpsweb\\erps.web\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Response\\v1\\usResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Interfaces\\v1\\IBaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\BloodTypeService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\QueryObject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\GenderService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\MaritalStatusService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\NationalityService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Data\\v1\\AppDBContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\Interfaces\\v1\\IAuthenticationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\Interfaces\\v1\\IBaseService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\Interfaces\\v1\\IBloodTypeService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\BaseService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\ReligionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\StatusService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Repositories\\v1\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -77,38 +77,32 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "BaseController.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\v1\\BaseController.cs",
+              "DocumentMoniker": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\Controllers\\v1\\BaseController.cs",
               "RelativeDocumentMoniker": "Controllers\\v1\\BaseController.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\v1\\BaseController.cs",
+              "ToolTip": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\Controllers\\v1\\BaseController.cs",
               "RelativeToolTip": "Controllers\\v1\\BaseController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T12:31:22.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T12:31:22.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "usResponse.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Response\\v1\\usResponse.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Response\\v1\\usResponse.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Response\\v1\\usResponse.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Response\\v1\\usResponse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T14:07:30.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T14:07:30.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "IBaseRepository.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Interfaces\\v1\\IBaseRepository.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Interfaces\\v1\\IBaseRepository.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Interfaces\\v1\\IBaseRepository.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Interfaces\\v1\\IBaseRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T13:58:47.126Z"
@@ -117,59 +111,51 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\v1\\AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\Controllers\\v1\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "Controllers\\v1\\AuthenticationController.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\v1\\AuthenticationController.cs",
+              "ToolTip": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\Controllers\\v1\\AuthenticationController.cs",
               "RelativeToolTip": "Controllers\\v1\\AuthenticationController.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAawIwAAAAiAAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAawIoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T13:36:38.789Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "BloodTypeService.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\BloodTypeService.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Services\\v1\\BloodTypeService.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\BloodTypeService.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\v1\\BloodTypeService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T14:11:56.351Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "QueryObject.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\QueryObject.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\QueryObject.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\QueryObject.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Entities\\QueryObject.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T14:16:57.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "GenderService.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\GenderService.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Services\\v1\\GenderService.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\GenderService.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\v1\\GenderService.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAgwD4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T14:12:25.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "MaritalStatusService.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\MaritalStatusService.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Services\\v1\\MaritalStatusService.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\MaritalStatusService.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\v1\\MaritalStatusService.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAowD0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T14:12:31.402Z"
@@ -179,142 +165,118 @@
               "DocumentIndex": 9,
               "Title": "NationalityService.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\NationalityService.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Services\\v1\\NationalityService.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\NationalityService.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\v1\\NationalityService.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAgwD0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T14:12:34.949Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Data\\v1\\AppDBContext.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Data\\v1\\AppDBContext.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Data\\v1\\AppDBContext.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Data\\v1\\AppDBContext.cs",
               "ViewState": "AQIAAIgAAAAAAAAAAAAlwLcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T13:54:36.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T13:54:36.124Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "AuthenticationService.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\v1\\AuthenticationService.cs",
               "ViewState": "AQIAABgAAAAAAAAAAIAywEoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T05:23:26.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-13T05:23:26.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
               "Title": "IAuthenticationService.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\Interfaces\\v1\\IAuthenticationService.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Application\\Interfaces\\v1\\IAuthenticationService.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\Interfaces\\v1\\IAuthenticationService.cs",
-              "RelativeToolTip": "..\\ERPS.Application\\Interfaces\\v1\\IAuthenticationService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T14:10:24.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "IBaseService.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\Interfaces\\v1\\IBaseService.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Application\\Interfaces\\v1\\IBaseService.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\Interfaces\\v1\\IBaseService.cs",
-              "RelativeToolTip": "..\\ERPS.Application\\Interfaces\\v1\\IBaseService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T14:10:49.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IBloodTypeService.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\Interfaces\\v1\\IBloodTypeService.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Application\\Interfaces\\v1\\IBloodTypeService.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\Interfaces\\v1\\IBloodTypeService.cs",
-              "RelativeToolTip": "..\\ERPS.Application\\Interfaces\\v1\\IBloodTypeService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T14:11:51.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "BaseService.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\BaseService.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Services\\v1\\BaseService.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\BaseService.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\v1\\BaseService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T14:13:02.609Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "ReligionService.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\ReligionService.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Services\\v1\\ReligionService.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\ReligionService.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\v1\\ReligionService.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAgwD0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T14:12:38.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "StatusService.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\StatusService.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Services\\v1\\StatusService.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\v1\\StatusService.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\v1\\StatusService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T14:12:41.854Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "BaseRepository.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Repositories\\v1\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Repositories\\v1\\BaseRepository.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Repositories\\v1\\BaseRepository.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Repositories\\v1\\BaseRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T13:54:23.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "AuthenticationRepository.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
-              "RelativeToolTip": "..\\ERPS.Infrastructure\\Repositories\\v1\\AuthenticationRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T13:04:41.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 2,
               "Title": "ReadMe.txt",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ReadMe.txt",
+              "DocumentMoniker": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\ReadMe.txt",
               "RelativeDocumentMoniker": "ReadMe.txt",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ReadMe.txt",
+              "ToolTip": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\ReadMe.txt",
               "RelativeToolTip": "ReadMe.txt",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAADGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
