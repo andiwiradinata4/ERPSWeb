@@ -4,8 +4,8 @@ namespace ERPS.Core.Response.v1
 {
     public class AppResponse
     {
-        public BigInteger Count {  get; set; }
-        public BigInteger TotalPage {  get; set; }
+        public BigInteger? Count {  get; set; }
+        public BigInteger? TotalPage {  get; set; }
         public bool Success { get; set; }
         public string Message { get; set; }
         public object? Data { get; set; }

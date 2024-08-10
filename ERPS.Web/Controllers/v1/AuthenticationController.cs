@@ -48,7 +48,7 @@ namespace ERPS.Web.Controllers.API.v1
             try
             {
                 BigInteger count = await _svc.GetTotalPageAsync(query);
-                BigInteger totalPage = (int)Math.Ceiling((double)count / query.PageSize);
+                BigInteger totalPage = (query.Page == 0) ? 1 : (int)Math.Ceiling((double)count / query.PageSize);
                 //BigInteger totalPage = query.PageSize > 0 ? query.PageSize > count ? 1 : Math.Round(count / query.PageSize) : 0;
                 return Ok(new AppResponse(true, "Get All Data Success", count, totalPage, await _svc.GetAllAsync(query)));
             }
