@@ -13,22 +13,6 @@ D:\My Project\Website\New ERPS\ERPS.Application\obj\Debug\net8.0\ERPS.Applicatio
 D:\My Project\Website\New ERPS\ERPS.Application\obj\Debug\net8.0\refint\ERPS.Application.dll
 D:\My Project\Website\New ERPS\ERPS.Application\obj\Debug\net8.0\ERPS.Application.pdb
 D:\My Project\Website\New ERPS\ERPS.Application\obj\Debug\net8.0\ref\ERPS.Application.dll
-D:\My Project\Website\ERPS\BE\ERPS.Application\bin\Debug\net8.0\ERPS.Application.deps.json
-D:\My Project\Website\ERPS\BE\ERPS.Application\bin\Debug\net8.0\ERPS.Application.dll
-D:\My Project\Website\ERPS\BE\ERPS.Application\bin\Debug\net8.0\ERPS.Application.pdb
-D:\My Project\Website\ERPS\BE\ERPS.Application\bin\Debug\net8.0\ERPS.Core.dll
-D:\My Project\Website\ERPS\BE\ERPS.Application\bin\Debug\net8.0\ERPS.Core.pdb
-D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.csproj.AssemblyReference.cache
-D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.GeneratedMSBuildEditorConfig.editorconfig
-D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.AssemblyInfoInputs.cache
-D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.AssemblyInfo.cs
-D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.csproj.CoreCompileInputs.cache
-D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.sourcelink.json
-D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.App.A5BFF966.Up2Date
-D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.dll
-D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\refint\ERPS.Application.dll
-D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.pdb
-D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ref\ERPS.Application.dll
 C:\Project\Web\ERPSWeb\ERPS.Application\bin\Debug\net8.0\ERPS.Application.deps.json
 C:\Project\Web\ERPSWeb\ERPS.Application\bin\Debug\net8.0\ERPS.Application.dll
 C:\Project\Web\ERPSWeb\ERPS.Application\bin\Debug\net8.0\ERPS.Application.pdb
@@ -45,3 +29,19 @@ C:\Project\Web\ERPSWeb\ERPS.Application\obj\Debug\net8.0\ERPS.Application.dll
 C:\Project\Web\ERPSWeb\ERPS.Application\obj\Debug\net8.0\refint\ERPS.Application.dll
 C:\Project\Web\ERPSWeb\ERPS.Application\obj\Debug\net8.0\ERPS.Application.pdb
 C:\Project\Web\ERPSWeb\ERPS.Application\obj\Debug\net8.0\ref\ERPS.Application.dll
+D:\My Project\Website\ERPS\BE\ERPS.Application\bin\Debug\net8.0\ERPS.Application.deps.json
+D:\My Project\Website\ERPS\BE\ERPS.Application\bin\Debug\net8.0\ERPS.Application.dll
+D:\My Project\Website\ERPS\BE\ERPS.Application\bin\Debug\net8.0\ERPS.Application.pdb
+D:\My Project\Website\ERPS\BE\ERPS.Application\bin\Debug\net8.0\ERPS.Core.dll
+D:\My Project\Website\ERPS\BE\ERPS.Application\bin\Debug\net8.0\ERPS.Core.pdb
+D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.csproj.AssemblyReference.cache
+D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.AssemblyInfoInputs.cache
+D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.AssemblyInfo.cs
+D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.csproj.CoreCompileInputs.cache
+D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.sourcelink.json
+D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.App.A5BFF966.Up2Date
+D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.dll
+D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\refint\ERPS.Application.dll
+D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ERPS.Application.pdb
+D:\My Project\Website\ERPS\BE\ERPS.Application\obj\Debug\net8.0\ref\ERPS.Application.dll
