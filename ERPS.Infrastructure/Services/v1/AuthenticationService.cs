@@ -15,14 +15,14 @@ using System.Security.Cryptography;
 using System.Text; 
 namespace ERPS.Infrastructure.Services.v1
 {
-    public class AuthenticationService : IAuthenticationService
+    public class AuthenticationService : BaseService<AppUser>, IAuthenticationService
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly IConfiguration _configuration;
         private readonly SymmetricSecurityKey _key;
         private readonly IAuthenticationRepository _repo;
-        public AuthenticationService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IConfiguration configuration, IAuthenticationRepository repo)
+        public AuthenticationService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IConfiguration configuration, IAuthenticationRepository repo) : base (repo)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -367,34 +367,34 @@ namespace ERPS.Infrastructure.Services.v1
             return code;
         }
 
-        public async Task<List<AppUser>> GetAllAsync(QueryObject query)
-        {
-            return await _repo.GetAllAsync(query);
-        }
+        //public async Task<List<AppUser>> GetAllAsync(QueryObject query)
+        //{
+        //    return await _repo.GetAllAsync(query);
+        //}
 
-        public async Task<BigInteger> GetTotalPageAsync(QueryObject query)
-        {
-            return await _repo.GetTotalPageAsync(query);
-        }
+        //public async Task<BigInteger> GetTotalPageAsync(QueryObject query)
+        //{
+        //    return await _repo.GetTotalPageAsync(query);
+        //}
 
-        public async Task<AppUser> GetByIDAsync(dynamic id)
-        {
-            return await _repo.GetByIDAsync(id);
-        }
+        //public async Task<AppUser> GetByIDAsync(dynamic id)
+        //{
+        //    return await _repo.GetByIDAsync(id);
+        //}
 
-        public async Task<AppUser> DeleteAsync(dynamic id)
-        {
-            return await _repo.DeleteAsync(id);
-        }
+        //public async Task<AppUser> DeleteAsync(dynamic id)
+        //{
+        //    return await _repo.DeleteAsync(id);
+        //}
 
-        public Task<AppUser> CreateAsync(AppUser entity, string userId)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<AppUser> CreateAsync(AppUser entity, string userId)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public async Task<AppUser> UpdateAsync(dynamic id, AppUser entity, string userId)
-        {
-            return await _repo.UpdateAsync(id, entity, true);
-        }
+        //public async Task<AppUser> UpdateAsync(dynamic id, AppUser entity, string userId)
+        //{
+        //    return await _repo.UpdateAsync(id, entity, true);
+        //}
     }
 }

@@ -58,7 +58,7 @@ namespace ERPS.Web.Controllers.API.v1
 
         [HttpGet("{id}")]
         [Authorize]
-        public virtual async Task<IActionResult> GetByID([FromRoute] int id)
+        public virtual async Task<IActionResult> GetByID([FromRoute] string id)
         {
             try
             {

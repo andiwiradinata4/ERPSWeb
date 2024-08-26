@@ -14,11 +14,11 @@ namespace ERPS.Web.Controllers.API.v1
 {
     [Route("api/v1/auth")]
     [ApiController]
-    public class AuthenticationController : ControllerBase
+    public class AuthenticationController : BaseController<AppUser>
     {
         private readonly IAuthenticationService _svc;
 
-        public AuthenticationController(IAuthenticationService svc)
+        public AuthenticationController(IAuthenticationService svc) : base(svc)
         {
             _svc = svc;
         }
@@ -41,83 +41,83 @@ namespace ERPS.Web.Controllers.API.v1
             }
         }
 
-        [HttpPost]
-        [Authorize]
-        public virtual async Task<IActionResult> GetAll([FromBody] QueryObject query)
-        {
-            try
-            {
-                BigInteger count = await _svc.GetTotalPageAsync(query);
-                BigInteger totalPage = (query.Page == 0) ? 1 : (int)Math.Ceiling((double)count / query.PageSize);
-                //BigInteger totalPage = query.PageSize > 0 ? query.PageSize > count ? 1 : Math.Round(count / query.PageSize) : 0;
-                return Ok(new AppResponse(true, "Get All Data Success", count, totalPage, await _svc.GetAllAsync(query)));
-            }
-            catch (AppException ex)
-            {
-                return BadRequest(new AppResponse(false, ex.Message, null));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new AppResponse(false, ex, null));
-            }
-        }
+        //[HttpPost]
+        //[Authorize]
+        //public virtual async Task<IActionResult> GetAll([FromBody] QueryObject query)
+        //{
+        //    try
+        //    {
+        //        BigInteger count = await _svc.GetTotalPageAsync(query);
+        //        BigInteger totalPage = (query.Page == 0) ? 1 : (int)Math.Ceiling((double)count / query.PageSize);
+        //        //BigInteger totalPage = query.PageSize > 0 ? query.PageSize > count ? 1 : Math.Round(count / query.PageSize) : 0;
+        //        return Ok(new AppResponse(true, "Get All Data Success", count, totalPage, await _svc.GetAllAsync(query)));
+        //    }
+        //    catch (AppException ex)
+        //    {
+        //        return BadRequest(new AppResponse(false, ex.Message, null));
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest(new AppResponse(false, ex, null));
+        //    }
+        //}
 
-        [HttpGet]
-        [Authorize]
-        public virtual async Task<IActionResult> GetAll()
-        {
-            try
-            {
-                return Ok(new AppResponse(true, "Get All Data Success", await _svc.GetAllAsync(new QueryObject())));
-            }
-            catch (AppException ex)
-            {
-                return BadRequest(new AppResponse(false, ex.Message, null));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new AppResponse(false, ex, null));
-            }
-        }
+        //[HttpGet]
+        //[Authorize]
+        //public virtual async Task<IActionResult> GetAll()
+        //{
+        //    try
+        //    {
+        //        return Ok(new AppResponse(true, "Get All Data Success", await _svc.GetAllAsync(new QueryObject())));
+        //    }
+        //    catch (AppException ex)
+        //    {
+        //        return BadRequest(new AppResponse(false, ex.Message, null));
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest(new AppResponse(false, ex, null));
+        //    }
+        //}
 
-        [HttpGet("{id}")]
-        [Authorize]
-        public virtual async Task<IActionResult> GetByID([FromRoute] string id)
-        {
-            try
-            {
-                return Ok(new AppResponse(true, "Get Data Success", await _svc.GetByIDAsync(id)));
-            }
-            catch (AppException ex)
-            {
-                return BadRequest(new AppResponse(false, ex.Message, null));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new AppResponse(false, ex, null));
-            }
-        }
+        //[HttpGet("{id}")]
+        //[Authorize]
+        //public virtual async Task<IActionResult> GetByID([FromRoute] string id)
+        //{
+        //    try
+        //    {
+        //        return Ok(new AppResponse(true, "Get Data Success", await _svc.GetByIDAsync(id)));
+        //    }
+        //    catch (AppException ex)
+        //    {
+        //        return BadRequest(new AppResponse(false, ex.Message, null));
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest(new AppResponse(false, ex, null));
+        //    }
+        //}
 
-        [HttpDelete("{id}")]
-        [Authorize]
-        public async Task<IActionResult> Delete([FromRoute] string id)
-        {
-            try
-            {
-                if (!ModelState.IsValid) return BadRequest(ModelState);
-                var data = await _svc.DeleteAsync(id);
-                return Ok(new AppResponse(true, "Delete Data Success", null));
-            }
-            catch (AppException ex)
-            {
-                return BadRequest(new AppResponse(false, ex.Message, null));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new AppResponse(false, ex, null));
-            }
+        //[HttpDelete("{id}")]
+        //[Authorize]
+        //public async Task<IActionResult> Delete([FromRoute] string id)
+        //{
+        //    try
+        //    {
+        //        if (!ModelState.IsValid) return BadRequest(ModelState);
+        //        var data = await _svc.DeleteAsync(id);
+        //        return Ok(new AppResponse(true, "Delete Data Success", null));
+        //    }
+        //    catch (AppException ex)
+        //    {
+        //        return BadRequest(new AppResponse(false, ex.Message, null));
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest(new AppResponse(false, ex, null));
+        //    }
 
-        }
+        //}
 
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDTO registerDTO)
