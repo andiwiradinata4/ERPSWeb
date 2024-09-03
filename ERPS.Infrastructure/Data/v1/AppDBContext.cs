@@ -63,20 +63,20 @@ namespace ERPS.Infrastructure.Data.v1
             //modelBuilder.Entity<Driver>().ToTable("QMS_mstDriver");
 
             // Register Role for Using JWT
-            List<IdentityRole> roles = new()
-            {
-                new IdentityRole
-                {
-                    Name = "Admin",
-                    NormalizedName = "ADMIN"
-                },
-                new IdentityRole
-                {
-                    Name = "User",
-                    NormalizedName = "USER"
-                }
-            };
-            modelBuilder.Entity<IdentityRole>().HasData(roles);
+            //List<IdentityRole> roles = new()
+            //{
+            //    new IdentityRole
+            //    {
+            //        Name = "Admin",
+            //        NormalizedName = "ADMIN"
+            //    },
+            //    new IdentityRole
+            //    {
+            //        Name = "User",
+            //        NormalizedName = "USER"
+            //    }
+            //};
+            //modelBuilder.Entity<IdentityRole>().HasData(roles);
 
             modelBuilder.Entity<Token>().Property(e => e.ID).ValueGeneratedOnAdd();
 
