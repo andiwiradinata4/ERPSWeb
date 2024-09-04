@@ -3,7 +3,7 @@
 namespace ERPS.Core.Entities
 {
     [Table("mstStatus")]
-    public class Status : Base
+    public class Status : BaseEntity
     {
         public int ID { get; set; }
         public string Description { get; set; } = string.Empty;

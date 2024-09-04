@@ -3,7 +3,7 @@
 namespace ERPS.Core.Entities
 {
     [Table("mstDriver")]
-    public class Driver : Base
+    public class Driver : BaseEntity
     {
         public string ID { get; set; } = String.Empty;
         public string IdentityCardNumber { get; set; } = String.Empty;

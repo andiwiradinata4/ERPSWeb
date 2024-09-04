@@ -3,7 +3,7 @@
 namespace ERPS.Core.Entities
 {
     [Table("mstGender")]
-    public class Gender : Base
+    public class Gender : BaseEntity
     {
         public int ID { get; set; }
         public string Description { get; set; } = String.Empty;

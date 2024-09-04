@@ -71,7 +71,11 @@ namespace ERPS.Infrastructure.Repositories.v1
                 var propertyExistsValue = propertyExists.GetValue(dataExists);
                 foreach (var propertyEntity in propertiesEntity)
                 {
+                    if (propertyExistsName == "RowVersion") _context.Entry(entity).OriginalValues["RowVersion"] = propertyExistsValue;
                     if (propertyExistsName == propertyEntity.Name && NeedReplace(propertyEntity.Name)) propertyEntity.SetValue(entity, propertyExistsValue);
+                    if (propertyExistsName != propertyEntity.Name) continue;
+                    if (propertyExistsName == "LogDate") propertyEntity.SetValue(entity, DateTime.Now); 
+                    if (propertyExistsName == "LogDateUtc") propertyEntity.SetValue(entity, DateTime.Now.ToUniversalTime()); 
                 }
             }
 

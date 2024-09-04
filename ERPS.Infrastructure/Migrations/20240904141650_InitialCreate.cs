@@ -3,8 +3,6 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
-
 namespace ERPS.Infrastructure.Migrations
 {
     /// <inheritdoc />
@@ -70,10 +68,14 @@ namespace ERPS.Infrastructure.Migrations
                     IsActive = table.Column<bool>(type: "bit", nullable: false),
                     LogBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LogDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LogDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LogInc = table.Column<int>(type: "int", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDisabled = table.Column<bool>(type: "bit", nullable: false),
+                    RowVersion = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -225,10 +227,14 @@ namespace ERPS.Infrastructure.Migrations
                     StatusID = table.Column<int>(type: "int", nullable: false),
                     LogBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LogDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LogDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LogInc = table.Column<int>(type: "int", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDisabled = table.Column<bool>(type: "bit", nullable: false),
+                    RowVersion = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -252,10 +258,14 @@ namespace ERPS.Infrastructure.Migrations
                     StatusID = table.Column<int>(type: "int", nullable: false),
                     LogBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LogDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LogDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LogInc = table.Column<int>(type: "int", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDisabled = table.Column<bool>(type: "bit", nullable: false),
+                    RowVersion = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -279,10 +289,14 @@ namespace ERPS.Infrastructure.Migrations
                     StatusID = table.Column<int>(type: "int", nullable: false),
                     LogBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LogDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LogDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LogInc = table.Column<int>(type: "int", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDisabled = table.Column<bool>(type: "bit", nullable: false),
+                    RowVersion = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -306,10 +320,14 @@ namespace ERPS.Infrastructure.Migrations
                     StatusID = table.Column<int>(type: "int", nullable: false),
                     LogBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LogDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LogDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LogInc = table.Column<int>(type: "int", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDisabled = table.Column<bool>(type: "bit", nullable: false),
+                    RowVersion = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -333,10 +351,14 @@ namespace ERPS.Infrastructure.Migrations
                     StatusID = table.Column<int>(type: "int", nullable: false),
                     LogBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LogDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LogDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LogInc = table.Column<int>(type: "int", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDisabled = table.Column<bool>(type: "bit", nullable: false),
+                    RowVersion = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -383,10 +405,14 @@ namespace ERPS.Infrastructure.Migrations
                     InternalRemarks = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LogBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LogDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LogDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LogInc = table.Column<int>(type: "int", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDisabled = table.Column<bool>(type: "bit", nullable: false),
+                    RowVersion = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -433,16 +459,6 @@ namespace ERPS.Infrastructure.Migrations
                         principalTable: "mstStatus",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.InsertData(
-                schema: "dbo",
-                table: "AspNetRoles",
-                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[,]
-                {
-                    { "d23b8f4f-2afc-4ba1-848d-d0dc9e94f3a6", null, "Admin", "ADMIN" },
-                    { "f09e8844-6e7c-4965-9175-e58c4c836280", null, "User", "USER" }
                 });
 
             migrationBuilder.CreateIndex(

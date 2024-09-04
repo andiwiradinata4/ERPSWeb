@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace ERPS.Core.Entities
 {
     [Table("mstBloodType")]
-    public class BloodType : Base
+    public class BloodType : BaseEntity
     {
         public int ID { get; set; }
         [Required]

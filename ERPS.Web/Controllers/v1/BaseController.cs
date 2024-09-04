@@ -19,7 +19,7 @@ namespace ERPS.Web.Controllers.API.v1
         }
 
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public virtual async Task<IActionResult> GetAll([FromBody] QueryObject query)
         {
             try
@@ -39,7 +39,7 @@ namespace ERPS.Web.Controllers.API.v1
         }
 
         [HttpGet]
-        [Authorize]
+        //[Authorize]
         public virtual async Task<IActionResult> GetAll()
         {
             try
@@ -57,7 +57,7 @@ namespace ERPS.Web.Controllers.API.v1
         }
 
         [HttpGet("{id}")]
-        [Authorize]
+        //[Authorize]
         public virtual async Task<IActionResult> GetByID([FromRoute] string id)
         {
             try
@@ -75,7 +75,7 @@ namespace ERPS.Web.Controllers.API.v1
         }
 
         [HttpPost("create")]
-        [Authorize]
+        //[Authorize]
         public virtual async Task<IActionResult> Create([FromBody] T entity)
         {
             try
@@ -98,7 +98,7 @@ namespace ERPS.Web.Controllers.API.v1
         }
 
         [HttpPut("{id}")]
-        [Authorize]
+        //[Authorize]
         public virtual async Task<IActionResult> Update([FromRoute] string id, [FromBody] T entity)
         {
             try
@@ -121,7 +121,7 @@ namespace ERPS.Web.Controllers.API.v1
         }
 
         [HttpDelete("{id}")]
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> Delete([FromRoute] string id)
         {
             try

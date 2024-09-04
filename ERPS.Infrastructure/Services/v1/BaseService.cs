@@ -32,7 +32,7 @@ namespace ERPS.Infrastructure.Services.v1
 
         public virtual async Task<T> UpdateAsync(dynamic id, T entity, string userId)
         {
-            return await _repo.UpdateAsync(id, entity, true);
+            return await _repo.UpdateAsync(id, entity);
         }
 
         public virtual async Task<T> DeleteAsync(dynamic id)
