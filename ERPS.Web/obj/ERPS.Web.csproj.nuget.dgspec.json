@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ERPS.Web.csproj": {}
+    "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\ERPS.Web.csproj": {}
   },
   "projects": {
-    "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\ERPS.Application.csproj": {
+    "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\ERPS.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\ERPS.Application.csproj",
+        "projectUniqueName": "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\ERPS.Application.csproj",
         "projectName": "ERPS.Application",
-        "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\ERPS.Application.csproj",
-        "packagesPath": "C:\\Users\\andiw\\.nuget\\packages\\",
-        "outputPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\obj\\",
+        "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\ERPS.Application.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\andiw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj": {
-                "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj"
+              "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj": {
+                "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj"
               }
             }
           }
@@ -68,24 +64,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj": {
+    "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj",
+        "projectUniqueName": "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj",
         "projectName": "ERPS.Core",
-        "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj",
-        "packagesPath": "C:\\Users\\andiw\\.nuget\\packages\\",
-        "outputPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\obj\\",
+        "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\andiw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,8 +86,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -117,6 +109,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.OData": {
+              "target": "Package",
+              "version": "[5.7.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.6, )"
@@ -146,24 +142,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj": {
+    "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj",
         "projectName": "ERPS.Infrastructure",
-        "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\andiw\\.nuget\\packages\\",
-        "outputPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\obj\\",
+        "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\andiw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -171,18 +164,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\ERPS.Application.csproj": {
-                "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\ERPS.Application.csproj"
+              "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\ERPS.Application.csproj": {
+                "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\ERPS.Application.csproj"
               },
-              "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj": {
-                "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj"
+              "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj": {
+                "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj"
               }
             }
           }
@@ -247,24 +239,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ERPS.Web.csproj": {
+    "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\ERPS.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ERPS.Web.csproj",
+        "projectUniqueName": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\ERPS.Web.csproj",
         "projectName": "ERPS.Web",
-        "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\ERPS.Web.csproj",
-        "packagesPath": "C:\\Users\\andiw\\.nuget\\packages\\",
-        "outputPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\obj\\",
+        "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\ERPS.Web.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Web\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\andiw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -272,21 +261,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\ERPS.Application.csproj": {
-                "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Application\\ERPS.Application.csproj"
+              "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\ERPS.Application.csproj": {
+                "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Application\\ERPS.Application.csproj"
               },
-              "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj": {
-                "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\ERPS.Core.csproj"
+              "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj": {
+                "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Core\\ERPS.Core.csproj"
               },
-              "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj": {
-                "projectPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj"
+              "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj": {
+                "projectPath": "C:\\Project\\Web\\ERPSWeb\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj"
               }
             }
           }
@@ -358,7 +346,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

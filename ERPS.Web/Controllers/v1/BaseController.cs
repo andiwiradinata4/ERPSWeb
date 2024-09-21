@@ -3,9 +3,10 @@ using ERPS.Core.Response.v1;
 using ERPS.Application.Interfaces.v1;
 using ERPS.Core.Exceptions.v1;
 using Microsoft.AspNetCore.Authorization;
-using ERPS.Core.Entities;
 using System.Security.Claims;
 using System.Numerics;
+using ERPS.Core.Entities.Base;
+using ERPS.Infrastructure.Interfaces.Services;
 
 namespace ERPS.Web.Controllers.API.v1
 {

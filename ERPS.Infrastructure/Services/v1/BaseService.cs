@@ -1,8 +1,9 @@
-﻿using ERPS.Core.Entities;
-using ERPS.Application.Interfaces.v1;
+﻿using ERPS.Application.Interfaces.v1;
 using ERPS.Core.Interfaces.v1;
 using ERPS.Infrastructure.Repositories.v1;
 using System.Numerics;
+using ERPS.Core.Entities.Base;
+using ERPS.Infrastructure.Interfaces.Services;
 
 namespace ERPS.Infrastructure.Services.v1
 {

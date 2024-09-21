@@ -1,4 +1,4 @@
-﻿namespace ERPS.Core.Entities
+﻿namespace ERPS.Core.Entities.Base
 {
     public class QueryObject
     {

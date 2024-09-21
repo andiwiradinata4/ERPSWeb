@@ -3,6 +3,7 @@ using ERPS.Application.Interfaces.v1;
 using ERPS.Core.Entities;
 using ERPS.Core.Exceptions.v1;
 using ERPS.Core.Interfaces.v1;
+using ERPS.Infrastructure.Interfaces.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -12,7 +13,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Numerics;
 using System.Security.Claims;
 using System.Security.Cryptography;
-using System.Text; 
+using System.Text;
 namespace ERPS.Infrastructure.Services.v1
 {
     public class AuthenticationService : BaseService<AppUser>, IAuthenticationService

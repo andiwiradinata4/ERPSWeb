@@ -2,8 +2,8 @@
 using ERPS.Core.Exceptions.v1;
 using ERPS.Infrastructure.Data.v1;
 using ERPS.Core.Interfaces.v1;
-using ERPS.Core.Entities;
 using System.Numerics;
+using ERPS.Core.Entities.Base;
 
 namespace ERPS.Infrastructure.Repositories.v1
 {

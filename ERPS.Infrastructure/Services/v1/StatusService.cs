@@ -2,6 +2,7 @@
 using ERPS.Application.Interfaces.v1;
 using ERPS.Core.Interfaces.v1;
 using ERPS.Infrastructure.Data.v1;
+using ERPS.Infrastructure.Interfaces.Services;
 
 namespace ERPS.Infrastructure.Services.v1
 {
