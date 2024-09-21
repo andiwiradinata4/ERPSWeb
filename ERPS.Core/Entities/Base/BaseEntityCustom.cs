@@ -1,18 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using ERPS.Core.Entities.Base.Interface;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-
-namespace ERPS.Core.Entities
+namespace ERPS.Core.Entities.Base
 {
-    [Table("mstUser")]
-    public class AppUser : IdentityUser
+    public class BaseEntityCustom : IBaseEntityStandard
     {
-        public string FirstName { get; set; } = string.Empty;
-        public string LastName { get; set; } = string.Empty;
-        public DateTime BirthDate { get; set; }
-
-
         public string LogBy { get; set; } = string.Empty;
         public string LogByUserDisplayName { get; set; } = string.Empty;
         public DateTime LogDate { get; set; } = DateTime.Now;
@@ -62,6 +54,5 @@ namespace ERPS.Core.Entities
         public bool Disabled { get; set; }
         [Timestamp]
         public byte[] RowVersion { get; set; } = Array.Empty<byte>();
-
     }
 }

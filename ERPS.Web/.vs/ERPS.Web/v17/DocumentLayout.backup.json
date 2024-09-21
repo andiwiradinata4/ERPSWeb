@@ -3,13 +3,13 @@
   "WorkspaceRootPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\base\\columnset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,37 +19,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 129,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ColumnSet.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Base\\ColumnSet.cs",
               "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\Base\\ColumnSet.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Base\\ColumnSet.cs",
               "RelativeToolTip": "..\\ERPS.Core\\Entities\\Base\\ColumnSet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T00:30:35.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Base\\BaseEntity.cs",
               "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\Base\\BaseEntity.cs",
               "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Base\\BaseEntity.cs",
               "RelativeToolTip": "..\\ERPS.Core\\Entities\\Base\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T00:25:35.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AppUser.cs",
               "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\AppUser.cs",
               "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\AppUser.cs",

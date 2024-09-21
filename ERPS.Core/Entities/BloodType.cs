@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using ERPS.Core.Entities.Base;
 
 namespace ERPS.Core.Entities
 {
