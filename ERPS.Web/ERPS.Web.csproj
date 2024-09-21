@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ERPS.Application\ERPS.Application.csproj" />
     <ProjectReference Include="..\ERPS.Core\ERPS.Core.csproj" />
     <ProjectReference Include="..\ERPS.Infrastructure\ERPS.Infrastructure.csproj" />
   </ItemGroup>

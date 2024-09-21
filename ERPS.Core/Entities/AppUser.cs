@@ -13,6 +13,7 @@ namespace ERPS.Core.Entities
 		[MaxLength(250)]
 		public string LastName { get; set; } = string.Empty;
         public DateTime BirthDate { get; set; }
+        public IEnumerable<UserRole> Roles { get; set; } = [];
 
 
 		[MaxLength(100)]

@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-namespace ERPS.Infrastructure.Data.v1
+namespace ERPS.Core.DbContext.v1
 {
     public static class usIQueryableExtensions
     {

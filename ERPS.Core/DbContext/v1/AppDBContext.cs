@@ -1,11 +1,10 @@
 ﻿using ERPS.Core.Entities;
 using ERPS.Core.Entities.Base;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
 using System.Linq.Expressions;
-namespace ERPS.Infrastructure.Data.v1
+namespace ERPS.Core.DbContext.v1
 {
     public class AppDBContext : IdentityDbContext<AppUser>
     {
