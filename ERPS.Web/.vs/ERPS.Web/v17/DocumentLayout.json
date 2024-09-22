@@ -3,189 +3,230 @@
   "WorkspaceRootPath": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\receivestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\repositories\\base\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\receive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\receivedet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\controllers\\v1\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:controllers\\v1\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\utilities\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\services\\base\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\controllers\\base\\baseselectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:controllers\\base\\baseselectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\interfaces\\services\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\itemtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|d:\\my project\\website\\erps\\be\\erps.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D943126-58ED-43FD-8470-32CA72CF6260}|ERPS.Web.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\repositories\\base\\baseselectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\businesspartner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\interfaces\\repositories\\base\\ibaseselectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABA7B72-EE42-4CC0-934C-028BB2AAE29F}|..\\ERPS.Core\\ERPS.Core.csproj|d:\\my project\\website\\erps\\be\\erps.core\\entities\\access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\utilities\\messageobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A59E420-4CD4-4351-ACAE-2863AA292CE1}|..\\ERPS.Infrastructure\\ERPS.Infrastructure.csproj|d:\\my project\\website\\erps\\be\\erps.infrastructure\\utilities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 129,
-          "SelectedChildIndex": 1,
+          "DockedHeight": 126,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReceiveStatus.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\ReceiveStatus.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\ReceiveStatus.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\ReceiveStatus.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Entities\\ReceiveStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAANAAAAAAAAAA==",
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Repositories\\Base\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Repositories\\Base\\BaseRepository.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Repositories\\Base\\BaseRepository.cs",
+              "RelativeToolTip": "..\\ERPS.Infrastructure\\Repositories\\Base\\BaseRepository.cs",
+              "ViewState": "AgIAAPsAAAAAAAAAAAAnwBsBAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T14:09:39.763Z",
+              "WhenOpened": "2024-09-22T02:15:08.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReceiveDet.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\ReceiveDet.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\ReceiveDet.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\ReceiveDet.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Entities\\ReceiveDet.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Utilities\\Message.cs",
+              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Utilities\\Message.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Utilities\\Message.cs",
+              "RelativeToolTip": "..\\ERPS.Infrastructure\\Utilities\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T14:05:11.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Receive.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Receive.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\Receive.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Receive.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Entities\\Receive.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwDkAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T13:20:23.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Program.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\Program.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Program.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Entities\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T13:20:22.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Module.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Module.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\Module.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Module.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Entities\\Module.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T13:20:20.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ItemType.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\ItemType.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\ItemType.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\ItemType.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Entities\\ItemType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T13:20:17.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Item.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Item.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\Item.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Item.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Entities\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T13:19:32.348Z",
+              "WhenOpened": "2024-09-22T02:03:01.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Company.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Company.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\Company.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Company.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Entities\\Company.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "BaseSelectRepository.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Repositories\\Base\\BaseSelectRepository.cs",
+              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Repositories\\Base\\BaseSelectRepository.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Repositories\\Base\\BaseSelectRepository.cs",
+              "RelativeToolTip": "..\\ERPS.Infrastructure\\Repositories\\Base\\BaseSelectRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T13:19:30.368Z",
+              "WhenOpened": "2024-09-22T02:02:26.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBaseService.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Interfaces\\Services\\IBaseService.cs",
+              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Interfaces\\Services\\IBaseService.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Interfaces\\Services\\IBaseService.cs",
+              "RelativeToolTip": "..\\ERPS.Infrastructure\\Interfaces\\Services\\IBaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T02:01:56.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StatusController.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\v1\\StatusController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v1\\StatusController.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\v1\\StatusController.cs",
+              "RelativeToolTip": "Controllers\\v1\\StatusController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T01:59:16.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseSelectController.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\Base\\BaseSelectController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Base\\BaseSelectController.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\Base\\BaseSelectController.cs",
+              "RelativeToolTip": "Controllers\\Base\\BaseSelectController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T02:00:12.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\AppUser.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\AppUser.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\AppUser.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Entities\\AppUser.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA9wBcAAAAAAAAAAAAAAA==",
+              "Title": "Helper.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Utilities\\Helper.cs",
+              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Utilities\\Helper.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Utilities\\Helper.cs",
+              "RelativeToolTip": "..\\ERPS.Infrastructure\\Utilities\\Helper.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAawC8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T13:19:21.22Z",
+              "WhenOpened": "2024-09-22T02:04:13.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BusinessPartner.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\BusinessPartner.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\BusinessPartner.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\BusinessPartner.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Entities\\BusinessPartner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\Base\\BaseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Base\\BaseController.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Controllers\\Base\\BaseController.cs",
+              "RelativeToolTip": "Controllers\\Base\\BaseController.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAtwJUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T13:19:20.532Z",
+              "WhenOpened": "2024-09-22T02:00:00.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Web\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwDMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T02:04:17.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Access.cs",
-              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Access.cs",
-              "RelativeDocumentMoniker": "..\\ERPS.Core\\Entities\\Access.cs",
-              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Core\\Entities\\Access.cs",
-              "RelativeToolTip": "..\\ERPS.Core\\Entities\\Access.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "MessageObject.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Utilities\\MessageObject.cs",
+              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Utilities\\MessageObject.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Utilities\\MessageObject.cs",
+              "RelativeToolTip": "..\\ERPS.Infrastructure\\Utilities\\MessageObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T13:19:19.14Z",
+              "WhenOpened": "2024-09-22T02:03:49.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IBaseSelectRepository.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Interfaces\\Repositories\\Base\\IBaseSelectRepository.cs",
+              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Interfaces\\Repositories\\Base\\IBaseSelectRepository.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Interfaces\\Repositories\\Base\\IBaseSelectRepository.cs",
+              "RelativeToolTip": "..\\ERPS.Infrastructure\\Interfaces\\Repositories\\Base\\IBaseSelectRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T02:01:39.778Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "8b8f568b-82aa-43f5-a65b-f6be95cacbba",
+        "Display": 1,
+        "X": 290,
+        "Y": 77,
+        "Width": 1258,
+        "Height": 939,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\Base\\BaseService.cs",
+              "RelativeDocumentMoniker": "..\\ERPS.Infrastructure\\Services\\Base\\BaseService.cs",
+              "ToolTip": "D:\\My Project\\Website\\ERPS\\BE\\ERPS.Infrastructure\\Services\\Base\\BaseService.cs",
+              "RelativeToolTip": "..\\ERPS.Infrastructure\\Services\\Base\\BaseService.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAawKMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T02:02:38.882Z",
               "EditorCaption": ""
             }
           ]

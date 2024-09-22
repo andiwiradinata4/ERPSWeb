@@ -7,8 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.WebApi.OData" Version="5.7.0" />
+    <Compile Remove="Response\**" />
+    <EmbeddedResource Remove="Response\**" />
+    <None Remove="Response\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="DTOs\Authentication\ChangeEmailTokenDTO.cs" />
+    <Compile Remove="DTOs\Authentication\ChangePhoneNumberTokenDTO.cs" />
+    <Compile Remove="DTOs\Authentication\CheckTokenDTO.cs" />
+    <Compile Remove="DTOs\Authentication\ConfirmEmailDTO.cs" />
+    <Compile Remove="DTOs\Authentication\NewUserDTO.cs" />
+    <Compile Remove="DTOs\Authentication\PhoneNumberConfirmationTokenDTO.cs" />
+    <Compile Remove="DTOs\Authentication\RequestTokenTypeDTO.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.Linq.Dynamic.Core" Version="1.4.1" />
     <PackageReference Include="System.Runtime" Version="4.3.1" />

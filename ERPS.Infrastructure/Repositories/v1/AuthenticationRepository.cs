@@ -1,7 +1,8 @@
 ﻿using ERPS.Core.Interfaces.v1;
-using ERPS.Core.Entities;
 using ERPS.Infrastructure.Data.v1;
 using Microsoft.EntityFrameworkCore;
+using ERPS.Infrastructure.Repositories.Base;
+using ERPS.Core.Entities.Master;
 
 namespace ERPS.Infrastructure.Repositories.v1
 {

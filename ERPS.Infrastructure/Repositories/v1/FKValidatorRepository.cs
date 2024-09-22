@@ -1,5 +1,5 @@
-﻿using ERPS.Core.Exceptions.v1;
-using ERPS.Infrastructure.Data.v1;
+﻿using ERPS.Core.DbContext.v1;
+using ERPS.Core.Exceptions.v1;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Reflection;

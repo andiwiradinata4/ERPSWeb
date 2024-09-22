@@ -1,29 +1,15 @@
-﻿using ERPS.Application.DTOs.v1.Authentication;
-using ERPS.Application.Interfaces.v1;
-using ERPS.Core.Entities;
-using ERPS.Core.Exceptions.v1;
-using ERPS.Core.Interfaces.v1;
+﻿using ERPS.Core.Entities.Master;
 using ERPS.Infrastructure.Interfaces.Services;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using NetCore.Models.dto.Account;
-using System.IdentityModel.Tokens.Jwt;
-using System.Numerics;
-using System.Security.Claims;
-using System.Security.Cryptography;
-using System.Text;
 namespace ERPS.Infrastructure.Services.v1
 {
-    public class AuthenticationService : BaseService<AppUser>, IAuthenticationService
+    public class AuthenticationService :IAuthenticationService
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly IConfiguration _configuration;
         private readonly SymmetricSecurityKey _key;
         private readonly IAuthenticationRepository _repo;
-        public AuthenticationService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IConfiguration configuration, IAuthenticationRepository repo) : base (repo)
+        public AuthenticationService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IConfiguration configuration, IAuthenticationRepository repo) : base(repo)
         {
             _userManager = userManager;
             _signInManager = signInManager;

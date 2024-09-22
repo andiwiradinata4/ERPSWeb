@@ -28,8 +28,8 @@
 6. Right Click Folder "Data" -> New C# -> Class -> "ApplicationDBContext"
 
 == Migrate Models ==
-1. run "dotnet ef migrations add init" -> add-migration "First Migrate" -Context AppDBContext -> dotnet ef migrations add InitialCreate --project ../ERPS.Infrastructure --startup-project ../ERPS.Web
-2. run "dotnet ef database update" -> update-database -Context AppDBContext -> dotnet ef database update --project ../ERPS.Infrastructure --startup-project ../ERPS.Web
+1. run "dotnet ef migrations add init" -> add-migration "First Migrate" -Context AppDBContext -> dotnet ef migrations add InitialCreate --project ../ERPS.Core --startup-project ../ERPS.Web
+2. run "dotnet ef database update" -> update-database -Context AppDBContext -> dotnet ef database update --project ../ERPS.Core --startup-project ../ERPS.Web
 
 == Using Identity JWT ==
 1. Open Nuget Gallery: CTRL + R -> Nuget Gallery

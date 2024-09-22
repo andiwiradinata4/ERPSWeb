@@ -1,19 +1,19 @@
-using ERPS.Application.Interfaces.v1;
-using ERPS.Core.Entities;
-using ERPS.Core.Interfaces.v1;
-using ERPS.Infrastructure.Data.v1;
+using ERPS.Core.DbContext.v1;
+using ERPS.Core.Entities.Master;
+using ERPS.Infrastructure.Interfaces.Repositories;
+using ERPS.Infrastructure.Interfaces.Repositories.Base;
 using ERPS.Infrastructure.Interfaces.Services;
+using ERPS.Infrastructure.Repositories.Base;
 using ERPS.Infrastructure.Repositories.v1;
+using ERPS.Infrastructure.Services.Base;
 using ERPS.Infrastructure.Services.v1;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using System.Security.Principal;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-//builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -31,17 +31,20 @@ builder.Services.AddDbContext<AppDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+// Inject IPrincipal
+builder.Services.AddHttpContextAccessor();
+/// #pragma warning disable CS8602 // Dereference of a possibly null reference.
+builder.Services.AddScoped<IPrincipal>(implementationFactory: provider => provider.GetService<IHttpContextAccessor>()?.HttpContext?.User!);
+/// #pragma warning restore CS8602 // Dereference of a possibly null reference.
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 // Repositories
-builder.Services.AddScoped<IBloodTypeRepository, BloodTypeRepository>();
-builder.Services.AddScoped<IGenderRepository, GenderRepository>();
-builder.Services.AddScoped<IMaritalStatusRepository, MaritalStatusRepository>();
-builder.Services.AddScoped<IStatusRepository, StatusRepository>();
+builder.Services.AddScoped(typeof(IBaseRepository<,>), typeof(BaseRepository<,>));
+builder.Services.AddScoped(typeof(IStatusRepository), typeof(StatusRepository));
 
 // Services
-builder.Services.AddScoped<IBloodTypeService, BloodTypeService>();
-builder.Services.AddScoped<IGenderService, GenderService>();
-builder.Services.AddScoped<IMaritalStatusService, MaritalStatusService>();
-builder.Services.AddScoped<IStatusService, StatusService>();
+builder.Services.AddScoped(typeof(IBaseService<,>), typeof(BaseService<,>));
+builder.Services.AddScoped(typeof(IStatusService), typeof(StatusService));
 
 // JWT Token
 builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
@@ -76,8 +79,6 @@ builder.Services.AddAuthentication(options =>
         ClockSkew = new TimeSpan(0, 1, 5),
     };
 });
-builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
-builder.Services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
 
 var app = builder.Build();
 

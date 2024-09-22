@@ -1,5 +1,4 @@
 ﻿using ERPS.Core.Entities.Base.Interface;
-using ERPS.Core.Interfaces.v1;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

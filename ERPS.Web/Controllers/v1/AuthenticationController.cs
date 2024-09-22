@@ -1,6 +1,6 @@
 ﻿using ERPS.Application.DTOs.v1.Authentication;
 using ERPS.Application.Interfaces.v1;
-using ERPS.Core.Entities;
+using ERPS.Core.Entities.Master;
 using ERPS.Core.Exceptions.v1;
 using ERPS.Core.Response.v1;
 using ERPS.Infrastructure.Interfaces.Services;

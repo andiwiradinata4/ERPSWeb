@@ -41,9 +41,7 @@ D:\My Project\Website\ERPS\BE\ERPS.Infrastructure\bin\Debug\net8.0\ERPS.Infrastr
 D:\My Project\Website\ERPS\BE\ERPS.Infrastructure\bin\Debug\net8.0\ERPS.Infrastructure.runtimeconfig.json
 D:\My Project\Website\ERPS\BE\ERPS.Infrastructure\bin\Debug\net8.0\ERPS.Infrastructure.dll
 D:\My Project\Website\ERPS\BE\ERPS.Infrastructure\bin\Debug\net8.0\ERPS.Infrastructure.pdb
-D:\My Project\Website\ERPS\BE\ERPS.Infrastructure\bin\Debug\net8.0\ERPS.Application.dll
 D:\My Project\Website\ERPS\BE\ERPS.Infrastructure\bin\Debug\net8.0\ERPS.Core.dll
-D:\My Project\Website\ERPS\BE\ERPS.Infrastructure\bin\Debug\net8.0\ERPS.Application.pdb
 D:\My Project\Website\ERPS\BE\ERPS.Infrastructure\bin\Debug\net8.0\ERPS.Core.pdb
 D:\My Project\Website\ERPS\BE\ERPS.Infrastructure\obj\Debug\net8.0\ERPS.Infrastructure.csproj.AssemblyReference.cache
 D:\My Project\Website\ERPS\BE\ERPS.Infrastructure\obj\Debug\net8.0\ERPS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
